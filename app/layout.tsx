@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans, Outfit } from "next/font/google";
+import PageLoader from "@/components/PageLoader";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -27,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable} ${openSans.variable} h-full`}>
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+      <body className="min-h-full flex flex-col antialiased">
+        <PageLoader />
+        {children}
+      </body>
     </html>
   );
 }

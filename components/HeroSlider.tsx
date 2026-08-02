@@ -12,7 +12,7 @@ export default function HeroSlider() {
   useEffect(() => {
     const timer = window.setInterval(() => {
       setIndex((current) => (current + 1) % slides.length);
-    }, 3000);
+    }, 5000);
     return () => window.clearInterval(timer);
   }, [slides.length]);
 
@@ -36,20 +36,39 @@ export default function HeroSlider() {
       }}
     >
       <div className="hero-slides">
-        {slides.map((src, i) => (
+        {slides.map((slide, i) => (
           <div
-            key={src}
+            key={slide.image}
             className={`hero-slide ${i === index ? "is-active" : ""}`}
             aria-hidden={i !== index}
           >
-            <Image
-              src={src}
-              alt=""
-              fill
-              priority={i === 0}
-              sizes="100vw"
-              className="hero-slide-image"
-            />
+            <div className="hero-card">
+              <div className="hero-card-content">
+                <div className="hero-card-content-inner">
+                  {slide.eyebrow ? <p className="hero-eyebrow">{slide.eyebrow}</p> : null}
+                  <h2 className="hero-title">{slide.title}</h2>
+                  <p className="hero-highlight">
+                    <span>{slide.highlight}</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="hero-card-media">
+                <Image
+                  src={slide.image}
+                  alt=""
+                  fill
+                  priority={i === 0}
+                  sizes="(max-width: 768px) 100vw, 55vw"
+                  className="hero-slide-image"
+                />
+              </div>
+
+              <div className="hero-chevron" aria-hidden>
+                <span className="hero-chevron-shape hero-chevron-dark" />
+                <span className="hero-chevron-shape hero-chevron-mid" />
+              </div>
+            </div>
           </div>
         ))}
       </div>
@@ -72,9 +91,9 @@ export default function HeroSlider() {
       </button>
 
       <div className="hero-dots" role="tablist" aria-label="Slide indicators">
-        {slides.map((src, i) => (
+        {slides.map((slide, i) => (
           <button
-            key={src}
+            key={slide.image}
             type="button"
             role="tab"
             aria-label={`Go to slide ${i + 1}`}

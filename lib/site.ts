@@ -61,10 +61,24 @@ export const site = {
     { label: "Sugar Process Chemical", href: "/products/paper-sugar-processing-chemicals", icon: "/images/sugar.png" },
   ],
   heroSlides: [
-    "/images/02-01-01-scaled.jpg",
-    "/images/01-01-scaled.jpg",
-    "/images/slider-1-scaled.jpg",
-    "/images/slider-4-scaled.jpg",
+    {
+      image: "/images/hero-1.gif",
+      eyebrow: "Indigon Tech India",
+      title: "Turning Complex Chemistry into",
+      highlight: "EVERYDAY CONVENIENCE.",
+    },
+    {
+      image: "/images/hero-2.webp",
+      eyebrow: "Industrial Water Treatment",
+      title: "Reliable Chemistry for",
+      highlight: "CLEANER OPERATIONS.",
+    },
+    {
+      image: "/images/hero-3.gif",
+      eyebrow: "Plant Solutions",
+      title: "Advanced Treatment Built for",
+      highlight: "INDUSTRIAL PERFORMANCE.",
+    },
   ],
   plantSlides: [
     {
