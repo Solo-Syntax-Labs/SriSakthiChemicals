@@ -13,86 +13,86 @@ export type AuditBlock = {
 };
 
 export const servicesContent = {
+  intro:
+    "Indigon field and lab teams help plants recover efficiency, commission equipment correctly, and keep water programs under control — not just deliver chemicals.",
   cards: [
     {
-      title: "Boiler and Condensers Descaling",
+      title: "Boiler & condenser descaling",
       description:
-        "Our skilled team provides professional descaling services for boilers and condensers, ensuring optimal efficiency and longevity of your equipment. We utilize advanced techniques and eco-friendly solutions to effectively remove scale buildup, enhancing performance and reducing energy consumption. Trust us to keep your systems running smoothly and reliably.",
+        "Targeted descaling for boilers and condensers to restore heat transfer, cut fuel waste, and extend equipment life with controlled, plant-safe methods.",
       image: "/images/services/boiler-descaling.png",
     },
     {
-      title: "Water treatment Equipment Erection & Commissioning",
+      title: "Equipment erection & commissioning",
       description:
-        "Our expert team specializes in the complete erection and commissioning of water treatment equipment. We ensure that all installations are performed with precision and adhere to the highest industry standards. With a focus on efficiency and reliability, we take pride in delivering seamless integration of systems, guaranteeing optimal performance and water quality for your facility. Trust us to handle your water treatment needs from start to finish.",
+        "End-to-end erection and commissioning for water-treatment skids and plants, with disciplined installation checks and startup support.",
       image: "/images/services/equipment-erction-commissioning.jpg",
     },
     {
-      title: "Industrial water balancing Audit Service",
+      title: "Industrial water balancing audit",
       description:
-        "Our team of experts offers comprehensive industrial water balancing audits tailored to any type of industry. We assess your water usage, identify inefficiencies, and provide actionable insights to optimize your system. By ensuring proper water distribution and management, we help you reduce costs, improve sustainability, and enhance overall operational efficiency. Trust us to help you make the most of your water resources.",
+        "Audit water use across utilities and process loops to find losses, imbalance, and opportunities for lower cost and better recovery.",
       image: "/images/services/upgrade.png",
     },
     {
-      title: "Water Treatment Consultancy Service",
+      title: "Water treatment consultancy",
       description:
-        "We are engaged in providing consultancy services for waste water treatment. The effluent treatment plant consultants also provide allied services that include site supervision for all engineering activities and for proper and timely installation of systems.",
+        "Process and wastewater consultancy covering scheme selection, site supervision, and practical engineering support through installation.",
       image: "/images/services/water-testing-1020x510-1.jpg",
     },
     {
-      title: "Lab Testing Service",
+      title: "Laboratory testing",
       description:
-        "Our firm is known for providing Laboratory Testing Services in compliance with industry standards. Advanced facility of our firm provides controlled conditions essential for carrying out various scientific experiments, measurement and researches.",
+        "Water and process sample testing under controlled lab conditions to guide product selection, dosing, and ongoing monitoring.",
       image: "/images/services/istockphoto-537040913-612x612-1.jpg",
     },
   ] satisfies ServiceCard[],
   audit: {
-    title: "Boiler Energy Audit",
+    title: "Boiler energy audit",
     intro:
-      "We specialize in enhancing boiler efficiency through our comprehensive energy audit services and cutting-edge technologies. Our approach leverages 3T Tuning Technology and Indigon Fireside Additives, allowing us to achieve significant fuel reduction of 15-25% for our clients.",
+      "Our boiler energy audits combine combustion review, heat-transfer checks, and Indigon fireside chemistry to unlock typical fuel savings of 15–25% where systems are out of tune.",
     blocks: [
       {
-        title: "What We Offer",
+        title: "What the audit covers",
         description:
-          "Boiler Energy Audits: Our detailed audits identify inefficiencies and provide actionable insights to optimize your boiler systems. We analyze key parameters, including combustion efficiency, heat transfer, and emissions, to pinpoint areas for improvement.",
+          "We examine combustion efficiency, heat-transfer surfaces, excess air, fouling risk, and emissions trends — then convert findings into a clear action list for operations and maintenance teams.",
         image: "/images/services/what-we-offer.jpg",
         imagePosition: "left",
       },
       {
-        title: "3T Tuning Technology",
+        title: "3T tuning technology",
         description:
-          "This innovative technology fine-tunes boiler performance by optimizing combustion conditions and enhancing heat transfer. By adjusting key operational variables, we ensure your boiler operates at peak efficiency, resulting in lower fuel consumption and reduced operational costs.",
+          "3T tuning fine-tunes combustion and heat-transfer conditions so the boiler holds a more efficient operating window with lower fuel burn and steadier steam delivery.",
         image: "/images/services/3T-tuning-technology.png",
         imagePosition: "right",
       },
       {
-        title: "Indigon Fireside Additives",
+        title: "Indigon fireside additives",
         description:
-          "Our specially formulated additives improve combustion efficiency and reduce fouling and slag buildup. By enhancing the fuel quality, Indigon additives help maintain optimal heat transfer and extend the lifespan of your boiler.",
+          "Fireside additives help improve combustion cleanliness, reduce fouling/slag tendency, and protect heat-transfer surfaces for longer, more efficient campaigns.",
         image: "/images/services/fireide-additvies.jpg",
         imagePosition: "left",
       },
       {
-        title: "Benefits of Boiler Energy Audits",
+        title: "Benefits you can measure",
         image: "/images/services/savings.jpg",
         imagePosition: "right",
         benefits: [
           {
-            title: "Significant Fuel Savings",
-            description:
-              "Reduce your fuel consumption by 15-25%, leading to substantial cost savings.",
+            title: "Fuel savings",
+            description: "Typical opportunity range of 15–25% where inefficiency is significant.",
           },
           {
-            title: "Enhanced Efficiency",
-            description: "Improve overall boiler performance and reliability.",
+            title: "Stronger reliability",
+            description: "Cleaner fireside conditions and more stable boiler performance.",
           },
           {
-            title: "Environmental Impact",
-            description: "Decrease emissions and contribute to a greener operation.",
+            title: "Lower emissions load",
+            description: "Better combustion control supports cleaner stack performance.",
           },
           {
-            title: "Tailored Products",
-            description:
-              "We customize our services to meet the specific needs of your facility, ensuring maximum benefit.",
+            title: "Site-specific plan",
+            description: "Recommendations matched to your fuel, load pattern, and metallurgy.",
           },
         ],
       },

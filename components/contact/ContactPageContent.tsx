@@ -40,88 +40,91 @@ function EmailIcon() {
 export default function ContactPageContent() {
   return (
     <section className="contact-section">
-      <div className="contact-section-overlay">
-        <div className="container">
-          <div className="contact-sec-cont">
-            <div className="panel-title">
-              <h2>Get In Touch</h2>
+      <div className="container">
+        <div className="page-intro-band is-compact">
+          <p className="section-kicker">Talk to Indigon</p>
+          <h2>Tell us about your water challenge</h2>
+          <p>
+            Share your plant requirement and our team will help with chemistry,
+            testing, or project support.
+          </p>
+        </div>
+
+        <div className="contact-sec-cont">
+          <div className="contact-sec-left">
+            <ContactForm />
+          </div>
+
+          <div className="contact-sec-right">
+            <div className="contact-page-address-box">
+              <h4>Our location</h4>
+              <div className="footer-contacts">
+                <div className="footer-icon">
+                  <LocationIcon />
+                </div>
+                <div className="footer-content">
+                  <p>
+                    {site.legalName}
+                    <br />
+                    {site.address.map((line) => (
+                      <span key={line}>
+                        {line}
+                        <br />
+                      </span>
+                    ))}
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="contact-sec-left">
-              <ContactForm />
-            </div>
-
-            <div className="contact-sec-right">
-              <div className="contact-page-address-box">
-                <h4>Our Location</h4>
-                <div className="footer-contacts">
-                  <div className="footer-icon">
-                    <LocationIcon />
-                  </div>
-                  <div className="footer-content">
-                    <p>
-                      {site.legalName}
+            <div className="contact-page-address-box">
+              <h4>Phone</h4>
+              <div className="footer-contacts">
+                <div className="footer-icon">
+                  <PhoneIcon />
+                </div>
+                <div className="footer-content">
+                  {site.phones.map((phone) => (
+                    <span key={phone}>
+                      <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>
                       <br />
-                      {site.address.map((line) => (
-                        <span key={line}>
-                          {line}
-                          <br />
-                        </span>
-                      ))}
-                    </p>
-                  </div>
+                    </span>
+                  ))}
+                  <a href={`tel:${site.landline.replace(/\s/g, "")}`}>
+                    {site.landline.replace(/\s/g, "")}
+                  </a>
                 </div>
               </div>
+            </div>
 
-              <div className="contact-page-address-box">
-                <h4>Contact</h4>
-                <div className="footer-contacts">
-                  <div className="footer-icon">
-                    <PhoneIcon />
-                  </div>
-                  <div className="footer-content">
-                    {site.phones.map((phone) => (
-                      <span key={phone}>
-                        <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>
-                        <br />
-                      </span>
-                    ))}
-                    <a href={`tel:${site.landline.replace(/\s/g, "")}`}>
-                      {site.landline.replace(/\s/g, "")}
-                    </a>
-                  </div>
+            <div className="contact-page-address-box">
+              <h4>Email</h4>
+              <div className="footer-contacts">
+                <div className="footer-icon">
+                  <EmailIcon />
+                </div>
+                <div className="footer-content">
+                  {site.emails.map((email) => (
+                    <span key={email}>
+                      <a href={`mailto:${email}`}>{email}</a>
+                      <br />
+                    </span>
+                  ))}
                 </div>
               </div>
+            </div>
 
-              <div className="contact-page-address-box">
-                <h4>E mail</h4>
-                <div className="footer-contacts">
-                  <div className="footer-icon">
-                    <EmailIcon />
-                  </div>
-                  <div className="footer-content">
-                    {site.emails.map((email) => (
-                      <span key={email}>
-                        <a href={`mailto:${email}`}>{email}</a>
-                        <br />
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="google-map">
-                <iframe
-                  src={mapEmbedUrl}
-                  width="100%"
-                  height="300"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={`${site.name} location map`}
-                />
-              </div>
+            <div className="google-map">
+              <iframe
+                src={mapEmbedUrl}
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`${site.name} location map`}
+              />
             </div>
           </div>
         </div>

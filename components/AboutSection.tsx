@@ -2,37 +2,58 @@ import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
+const highlights = [
+  { value: "25+", label: "Years of field experience" },
+  { value: "7+", label: "Chemical product lines" },
+  { value: "ETP–DM", label: "Plant engineering support" },
+];
+
 export default function AboutSection() {
   return (
-    <section className="homepage-section-1">
-      <div className="container">
-        <div className="homepage-sec-1-cont">
-          <div className="homepage-sec-1-left">
-            <div className="home-about-media">
-              <Image
-                src="/images/04.png"
-                alt="Indigon water treatment solutions"
-                width={720}
-                height={720}
-                className="about-main-image"
-              />
-            </div>
+    <section className="home-about">
+      <div className="container home-about-grid">
+        <div className="home-about-copy">
+          <p className="section-kicker">Built for industry water</p>
+          <h2>Chemistry, plants, and support under one Indigon roof</h2>
+          <p className="home-about-lead">
+            {site.name} helps factories keep boilers, cooling systems, and treatment
+            plants running clean — with specialty chemicals and practical on-ground
+            guidance.
+          </p>
+          <p>
+            From formulation through application support, we focus on measurable
+            results: less scale, less corrosion, steadier throughput, and water
+            programs that fit real plant conditions in India.
+          </p>
+
+          <div className="home-about-stats">
+            {highlights.map((item) => (
+              <div className="home-about-stat" key={item.label}>
+                <strong>{item.value}</strong>
+                <span>{item.label}</span>
+              </div>
+            ))}
           </div>
-          <div className="homepage-sec-1-right">
-            <p className="section-kicker">Who we are</p>
-            <h1>About Indigon</h1>
-            <h2>Empowering Industries with Chemical Ingenuity</h2>
-            <p>
-              {site.fullName} was founded with a clear vision: to revolutionize
-              the water treatment industry through innovation, expertise, and
-              dedication. Over the years, we have evolved from a modest chemical
-              manufacturer into a trusted leader, providing state-of-the-art water
-              treatment solutions to industries across various sectors.
-            </p>
-            <Link href="/about">
-              <button type="button">Explore our story</button>
-            </Link>
+
+          <Link href="/about" className="home-about-cta">
+            Read our story
+          </Link>
+        </div>
+
+        <div className="home-about-visual">
+          <div className="home-about-photo">
+            <Image
+              src="/images/etp-plant.jpg"
+              alt="Indigon industrial water treatment plant"
+              fill
+              sizes="(max-width: 900px) 100vw, 48vw"
+              className="home-about-photo-image"
+              priority
+            />
           </div>
+          <aside className="home-about-note">
+            <p>Specialty chemicals + plant know-how for process water that stays reliable.</p>
+          </aside>
         </div>
       </div>
     </section>

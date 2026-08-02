@@ -4,40 +4,37 @@ import { site } from "@/lib/site";
 
 export default function ProductRange() {
   return (
-    <section className="homepage-sec-2">
+    <section className="home-products">
       <div className="container">
-        <h3>Our Product Range</h3>
-        <div className="homepage-sec-2-cont">
-          <div className="homepage-sec-2-left">
-            <h2>Chemistry engineered for industrial reliability</h2>
-            <p>
-              At {site.fullName}, we provide a comprehensive range of boiler water
-              treatment chemicals for low, medium, and high-pressure boilers,
-              including power plant boilers.
-            </p>
-            <Link href="/products/boiler-treatment-chemicals">
-              <button type="button">View products</button>
-            </Link>
-          </div>
-          <div className="homepage-sec-2-right">
-            {site.products.map((product) => (
-              <div className="product-range-icon-section" key={product.href}>
-                <div className="range-icon">
-                  <Link href={product.href}>
-                    <Image
-                      src={product.icon}
-                      alt={product.label}
-                      width={75}
-                      height={75}
-                    />
-                  </Link>
-                </div>
-                <h4>
-                  <Link href={product.href}>{product.label}</Link>
-                </h4>
+        <div className="home-products-head">
+          <p className="section-kicker">Specialty chemistry</p>
+          <h2>Product lines built for utility and process water</h2>
+          <p>
+            Indigon supplies treatment programs for boilers, cooling systems, chillers,
+            RO circuits, effluent trains, foam control, and sugar/paper process needs —
+            with guidance matched to your plant conditions.
+          </p>
+        </div>
+
+        <div className="home-products-grid">
+          {site.products.map((product, index) => (
+            <Link href={product.href} className="home-products-card" key={product.href}>
+              <span className="home-products-num">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <div className="home-products-icon">
+                <Image src={product.icon} alt="" width={56} height={56} />
               </div>
-            ))}
-          </div>
+              <h3>{product.label}</h3>
+              <span className="home-products-link">Explore →</span>
+            </Link>
+          ))}
+        </div>
+
+        <div className="home-products-cta-wrap">
+          <Link href="/products" className="home-products-cta">
+            Browse full catalogue
+          </Link>
         </div>
       </div>
     </section>

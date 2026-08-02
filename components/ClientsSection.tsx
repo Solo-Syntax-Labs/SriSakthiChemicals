@@ -24,7 +24,7 @@ export default function ClientsSection() {
   useEffect(() => {
     const timer = window.setInterval(() => {
       setIndex((current) => (current + 1) % clients.length);
-    }, 2000);
+    }, 2500);
     return () => window.clearInterval(timer);
   }, [clients.length]);
 
@@ -33,53 +33,53 @@ export default function ClientsSection() {
   });
 
   return (
-    <section className="homepage-sec-3 home-clients">
+    <section className="home-clients">
       <div className="container">
-        <div className="homepage-sec-3-cont">
-          <div className="clients-heading">
-            <p className="section-kicker">Trusted partnerships</p>
-            <h2>Valuable Clients</h2>
-            <p>
-              Industries across manufacturing, power, and process plants rely on
-              Indigon chemistry and technical support.
-            </p>
+        <div className="home-clients-head">
+          <p className="section-kicker">Customer network</p>
+          <h2>Plants that trust Indigon day after day</h2>
+          <p>
+            From textile and sugar mills to power and process utilities, our chemistry
+            and service teams support operations that cannot afford unstable water
+            programs.
+          </p>
+        </div>
+
+        <div className="home-clients-track-wrap">
+          <button
+            type="button"
+            className="client-nav client-nav-prev"
+            aria-label="Previous clients"
+            onClick={() =>
+              setIndex((current) => (current - 1 + clients.length) % clients.length)
+            }
+          >
+            ‹
+          </button>
+          <div
+            className="client-track"
+            style={{ ["--client-cols" as string]: String(visible) }}
+          >
+            {items.map((client, i) => (
+              <div className="client-logo" key={`${client.src}-${i}`}>
+                <Image
+                  src={client.src}
+                  alt={client.alt}
+                  width={220}
+                  height={120}
+                  className="client-logo-image"
+                />
+              </div>
+            ))}
           </div>
-          <div className="logo-container">
-            <button
-              type="button"
-              className="client-nav client-nav-prev"
-              aria-label="Previous clients"
-              onClick={() =>
-                setIndex((current) => (current - 1 + clients.length) % clients.length)
-              }
-            >
-              ‹
-            </button>
-            <div
-              className="client-track"
-              style={{ ["--client-cols" as string]: String(visible) }}
-            >
-              {items.map((client, i) => (
-                <div className="client-logo" key={`${client.src}-${i}`}>
-                  <Image
-                    src={client.src}
-                    alt={client.alt}
-                    width={220}
-                    height={120}
-                    className="client-logo-image"
-                  />
-                </div>
-              ))}
-            </div>
-            <button
-              type="button"
-              className="client-nav client-nav-next"
-              aria-label="Next clients"
-              onClick={() => setIndex((current) => (current + 1) % clients.length)}
-            >
-              ›
-            </button>
-          </div>
+          <button
+            type="button"
+            className="client-nav client-nav-next"
+            aria-label="Next clients"
+            onClick={() => setIndex((current) => (current + 1) % clients.length)}
+          >
+            ›
+          </button>
         </div>
       </div>
     </section>

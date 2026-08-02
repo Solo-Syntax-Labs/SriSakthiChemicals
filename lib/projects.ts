@@ -13,113 +13,107 @@ export type PlantSection = {
 };
 
 export const projectsContent = {
+  intro:
+    `${site.name} fabricates and installs treatment plants sized to your process — from RO and softening to DM, STP, and integrated utility water schemes.`,
   introSections: [
     {
-      title: "Water Treatment Plants",
-      description: `At ${site.name}, we specialize in the fabrication and installation of water treatment plants, including Reverse Osmosis (RO) plants, Softening plants, Deionization (DM) plants, and more. We cater to all types and capacities, tailored to meet your specific process needs.`,
+      title: "Water treatment plants",
+      description: `We design and install RO, softening, DM, and related plants across capacities, configured for your source water and process demand — not a one-size package.`,
     },
     {
-      title: "Advanced STP Technology: Ozone Bioxy Plasma",
-      description: `At ${site.name}, we introduce Ozone Bioxy Plasma Technology, a revolutionary advancement in Sewage Treatment Plants (STPs). This technology uses a powerful combination of ozone and bio-oxygen to deliver efficient and eco-friendly wastewater treatment.`,
+      title: "Advanced STP: Ozone Bioxy Plasma",
+      description: `For sewage treatment, Indigon offers Ozone Bioxy Plasma technology — combining ozone and bio-oxygen for compact, low-sludge wastewater treatment with a smaller operating footprint.`,
     },
   ],
   stpBenefits: {
-    title: "Benefits of Our STP Technology",
+    title: "Why plants choose this STP approach",
     background: "/images/projects/vecteezy_waste-water-in-pond-wastewater-and-hazardous-waste_27541136-scaled.jpg",
     align: "left" as const,
     items: [
       {
-        title: "No Sludge Generation",
-        description:
-          "Completely eliminates sludge, making it a cleaner and hassle-free process.",
+        title: "No sludge burden",
+        description: "Avoids conventional sludge handling loads that slow operations.",
       },
       {
-        title: "No Biological Treatment Required",
-        description: "Removes the need for conventional biological processes.",
+        title: "No biological train required",
+        description: "Removes dependence on traditional biological process blocks.",
       },
       {
-        title: "Space-Saving Design",
-        description: "Requires significantly less space compared to traditional STPs.",
+        title: "Compact footprint",
+        description: "Needs less civil space than many conventional STP layouts.",
       },
       {
-        title: "Chemical-Free Operation",
-        description:
-          "No chemicals are required, ensuring an environmentally friendly approach.",
+        title: "Chemical-light operation",
+        description: "Designed for cleaner operation with minimal chemical dependence.",
       },
       {
-        title: "Minimal Manpower",
-        description:
-          "Automation and simplicity reduce the need for extensive manpower.",
+        title: "Lower manpower load",
+        description: "Simpler operating philosophy reduces day-to-day staffing pressure.",
       },
       {
-        title: "Eco-Friendly",
-        description:
-          "Converts pollutants into harmless gases like O₂ and NO₂, making it highly sustainable.",
+        title: "Stronger sustainability profile",
+        description: "Breaks down pollutants toward cleaner gas pathways and reuse potential.",
       },
     ] satisfies BenefitItem[],
   },
   technicalBackground: {
-    title: "Brief Technical Background",
+    title: "Technical background in brief",
     background: "/images/projects/stp-technical-bg-image.jpg",
     align: "right" as const,
     items: [
       {
         description:
-          "The pillar of the treatment scheme is a combination of Ozone and another component called Bio-Oxygen plasma – at the right stoichiometric ratio.",
+          "Treatment relies on a controlled combination of ozone and bio-oxygen plasma at the right stoichiometric ratio.",
       },
       {
-        description: "This technology is Patented.",
-      },
-      {
-        description:
-          "Bio Oxygen is an intermediate stage before ozone, having different (lesser) inter-atomic angles as in an ozone molecule, making it more reactive than normal ozone.",
+        description: "The technology platform is patented.",
       },
       {
         description:
-          "This enhanced reactivity is the secret of breaking down high BOD, COD in raw sewage, along with making the entire biological mass / sludge fully soluble inside the wastewater during recirculation inside the ozone cum bio-oxygen contact tank.",
+          "Bio-oxygen is an intermediate, more reactive stage that helps break down high BOD/COD loads and solubilize biological mass during recirculation.",
       },
       {
         description:
-          "Apart from that, the percentage of ozone and bio-oxygen in the outlet gas produced from our equipment ascertains the success of the decompositions.",
+          "Outlet ozone/bio-oxygen balance helps confirm decomposition performance in operation.",
       },
       {
         description:
-          "Simple ozonation is only good for treated sewage of low toxicity and TSS, for polishing residual / small levels of COD, BOD.",
+          "Simple ozonation alone is better suited to polishing low-toxicity, low-TSS treated sewage — this combined approach targets tougher raw sewage loads.",
       },
     ] satisfies BenefitItem[],
   },
   plants: [
     {
-      title: "Reverse Osmosis (RO) Plants",
+      title: "Reverse Osmosis (RO) plants",
       image: "/images/projects/ro-image-2-transformed-e1727238234482.jpeg",
       imagePosition: "right",
       items: [
-        "Removes dissolved salts, chemicals, and contaminants from water.",
-        "Ensures high-quality, purified water for industrial processes.",
-        "Available in various capacities to meet your specific needs.",
-        "Customizable for different water sources such as borewell, municipal, and more.",
+        "Removes dissolved salts and contaminants for process-ready water.",
+        "Sized for industrial duty across borewell, municipal, and mixed sources.",
+        "Configurable recovery and pretreatment to protect membranes.",
+        "Built for stable purified water quality under varying feed conditions.",
       ],
     },
     {
-      title: "Softening Plants",
+      title: "Softening plants",
       image: "/images/projects/softening-plants.jpg",
       imagePosition: "left",
       items: [
-        "Removes hardness-causing minerals like calcium and magnesium.",
-        "Prevents scaling in boilers, cooling towers, and other equipment.",
-        "Ideal for industries requiring soft water for smooth operation.",
-        "Efficient systems designed for easy maintenance and high performance.",
+        "Removes hardness ions that drive scale in boilers and cooling loops.",
+        "Protects heat-transfer surfaces and reduces cleaning frequency.",
+        "Suited to utilities that need dependable soft water supply.",
+        "Designed for straightforward operation and maintenance access.",
       ],
     },
     {
-      title: "Deionization (DM) Plants",
+      title: "Deionization (DM) plants",
       image: "/images/projects/dm-water-treatment-plant-for-sugar.jpg",
       imagePosition: "right",
       items: [
-        "Eliminates ionic impurities from water for high-purity applications.",
-        "Suitable for industries like pharmaceuticals, electronics, and power plants.",
-        "Offers consistent, low-conductivity water output.",
+        "Delivers low-conductivity water for high-purity industrial uses.",
+        "Common in power, process, and quality-critical manufacturing.",
         "Available in automatic and semi-automatic configurations.",
+        "Stable output when paired with the right pretreatment train.",
       ],
     },
   ] satisfies PlantSection[],

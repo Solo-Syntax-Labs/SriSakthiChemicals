@@ -2,22 +2,30 @@ import Image from "next/image";
 import { projectsContent } from "@/lib/projects";
 
 export default function ProjectsPageContent() {
-  const { introSections, stpBenefits, technicalBackground, plants } = projectsContent;
+  const { intro, introSections, stpBenefits, technicalBackground, plants } =
+    projectsContent;
 
   return (
-    <>
-      {introSections.map((section) => (
-        <section className="product-section projects-intro" key={section.title}>
-          <div className="container">
-            <div className="product-section-cont">
-              <div className="product-section-left">
-                <h2>{section.title}</h2>
-                <p>{section.description}</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      ))}
+    <div className="projects-page">
+      <section className="page-intro-band">
+        <div className="container">
+          <p className="section-kicker">Plant engineering</p>
+          <h2>Projects built around your water duty</h2>
+          <p>{intro}</p>
+        </div>
+      </section>
+
+      <section className="projects-intro-grid">
+        <div className="container projects-intro-cards">
+          {introSections.map((section, index) => (
+            <article className="projects-intro-card" key={section.title}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h3>{section.title}</h3>
+              <p>{section.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className="projects-panel-section">
         <Image
@@ -29,6 +37,7 @@ export default function ProjectsPageContent() {
         />
         <div className="container projects-panel-wrap">
           <div className={`projects-panel projects-panel-${stpBenefits.align}`}>
+            <p className="section-kicker">STP technology</p>
             <h3>{stpBenefits.title}</h3>
             <ul>
               {stpBenefits.items.map((item) => (
@@ -56,6 +65,7 @@ export default function ProjectsPageContent() {
           <div
             className={`projects-panel projects-panel-${technicalBackground.align}`}
           >
+            <p className="section-kicker">How it works</p>
             <h3>{technicalBackground.title}</h3>
             <ul>
               {technicalBackground.items.map((item) => (
@@ -70,16 +80,19 @@ export default function ProjectsPageContent() {
         </div>
       </section>
 
-      {plants.map((plant) => (
-        <section className="ro-plant-bg" key={plant.title}>
+      <section className="projects-plants">
+        <div className="container">
+          <div className="page-intro-band is-compact">
+            <p className="section-kicker">Core plant types</p>
+            <h2>RO, softening, and DM systems</h2>
+          </div>
+        </div>
+        {plants.map((plant, index) => (
           <div
-            className={
-              plant.imagePosition === "left"
-                ? "project-section-container-2"
-                : "project-section-container"
-            }
+            className={`projects-plant-row ${index % 2 === 1 ? "is-flip" : ""}`}
+            key={plant.title}
           >
-            <div className="project-section-image">
+            <div className="projects-plant-media">
               <Image
                 src={plant.image}
                 alt={plant.title}
@@ -88,21 +101,18 @@ export default function ProjectsPageContent() {
                 className="project-plant-image"
               />
             </div>
-            <div className="product-section-3-cont projects-plant-copy">
+            <div className="projects-plant-copy">
+              <p className="section-kicker">0{index + 1}</p>
               <h3>{plant.title}</h3>
               <ul>
                 {plant.items.map((item) => (
-                  <li key={item}>
-                    <div className="benifits-div">
-                      <p>{item}</p>
-                    </div>
-                  </li>
+                  <li key={item}>{item}</li>
                 ))}
               </ul>
             </div>
           </div>
-        </section>
-      ))}
-    </>
+        ))}
+      </section>
+    </div>
   );
 }
