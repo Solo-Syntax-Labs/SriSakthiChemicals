@@ -91,9 +91,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background:
-    radial-gradient(circle at 50% 35%, rgba(183, 216, 237, 0.55) 0%, transparent 42%),
-    linear-gradient(180deg, #f4faff 0%, #e7f3ff 48%, #d7ebf8 100%);
+  background: #ffffff;
   opacity: 1;
   transition: opacity 0.4s ease, visibility 0.4s ease;
 }
