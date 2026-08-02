@@ -43,7 +43,7 @@ export default function AboutSection() {
         <div className="home-about-visual">
           <div className="home-about-photo">
             <Image
-              src="/images/etp-plant.jpg"
+              src="/images/home/plant-about.jpg"
               alt="Indigon industrial water treatment plant"
               fill
               sizes="(max-width: 900px) 100vw, 48vw"

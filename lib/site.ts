@@ -85,23 +85,23 @@ export const site = {
       title: "ETP Plant",
       description:
         "An effluent treatment (ETP) is a facility designed to treat industrial waste water by removing contaminants, ensuring that the discharge meets environmental regulations before being released or reused.",
-      image: "/images/etp-plant.jpg",
+      image: "/images/home/plant-etp.jpg",
     },
     {
       title: "STP Plant",
       description:
         "At Indigon, we introduce Ozone Bioxy Plasma Technology, a revolutionary advancement in Sewage Treatment Plants (STPs).",
-      image: "/images/stp-plant.jpg",
+      image: "/images/home/plant-stp.jpg",
     },
     {
       title: "RO Plant",
       description: "Advanced reverse osmosis systems engineered for high-purity industrial water treatment.",
-      image: "/images/home-page-RO-image.png",
+      image: "/images/home/plant-ro.jpg",
     },
     {
       title: "DM Plant",
       description: "Eliminates ionic impurities from water for high-purity applications.",
-      image: "/images/dm-water-treatment-plant-for-sugar.jpg",
+      image: "/images/home/plant-dm.jpg",
     },
   ],
   clients: [

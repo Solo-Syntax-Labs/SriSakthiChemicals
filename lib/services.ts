@@ -20,31 +20,31 @@ export const servicesContent = {
       title: "Boiler & condenser descaling",
       description:
         "Targeted descaling for boilers and condensers to restore heat transfer, cut fuel waste, and extend equipment life with controlled, plant-safe methods.",
-      image: "/images/services/boiler-descaling.png",
+      image: "/images/services/boiler-descaling.jpg",
     },
     {
       title: "Equipment erection & commissioning",
       description:
         "End-to-end erection and commissioning for water-treatment skids and plants, with disciplined installation checks and startup support.",
-      image: "/images/services/equipment-erction-commissioning.jpg",
+      image: "/images/services/commissioning.jpg",
     },
     {
       title: "Industrial water balancing audit",
       description:
         "Audit water use across utilities and process loops to find losses, imbalance, and opportunities for lower cost and better recovery.",
-      image: "/images/services/upgrade.png",
+      image: "/images/services/water-audit.jpg",
     },
     {
       title: "Water treatment consultancy",
       description:
         "Process and wastewater consultancy covering scheme selection, site supervision, and practical engineering support through installation.",
-      image: "/images/services/water-testing-1020x510-1.jpg",
+      image: "/images/services/consultancy.jpg",
     },
     {
       title: "Laboratory testing",
       description:
         "Water and process sample testing under controlled lab conditions to guide product selection, dosing, and ongoing monitoring.",
-      image: "/images/services/istockphoto-537040913-612x612-1.jpg",
+      image: "/images/services/lab-testing.jpg",
     },
   ] satisfies ServiceCard[],
   audit: {
@@ -56,21 +56,21 @@ export const servicesContent = {
         title: "What the audit covers",
         description:
           "We examine combustion efficiency, heat-transfer surfaces, excess air, fouling risk, and emissions trends — then convert findings into a clear action list for operations and maintenance teams.",
-        image: "/images/services/what-we-offer.jpg",
+        image: "/images/services/audit-cover.jpg",
         imagePosition: "left",
       },
       {
         title: "3T tuning technology",
         description:
           "3T tuning fine-tunes combustion and heat-transfer conditions so the boiler holds a more efficient operating window with lower fuel burn and steadier steam delivery.",
-        image: "/images/services/3T-tuning-technology.png",
+        image: "/images/services/tuning.jpg",
         imagePosition: "right",
       },
       {
         title: "Indigon fireside additives",
         description:
           "Fireside additives help improve combustion cleanliness, reduce fouling/slag tendency, and protect heat-transfer surfaces for longer, more efficient campaigns.",
-        image: "/images/services/fireide-additvies.jpg",
+        image: "/images/services/fireside.jpg",
         imagePosition: "left",
       },
       {

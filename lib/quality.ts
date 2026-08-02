@@ -15,7 +15,7 @@ export const qualityContent = {
     {
       title: "Process control from raw material to dispatch",
       imagePosition: "right",
-      image: "/images/quality/istockphoto-1207928621-612x612-1.jpg",
+      image: "/images/quality/process-control.jpg",
       paragraphs: [
         "Our quality system covers raw-material checks, in-process controls, and finished-batch testing for composition, performance, and application safety before release.",
       ],
@@ -23,8 +23,7 @@ export const qualityContent = {
     {
       title: "Standards we work to",
       imagePosition: "left",
-      image:
-        "/images/quality/concept-of-iso-standards-quality-control-assurance-warranty-business-technology006-free-photo.jpg",
+      image: "/images/quality/standards.jpg",
       paragraphs: [
         `${site.name} maintains ISO 9001:2015 practices so product and service delivery stay consistent with customer and regulatory expectations.`,
         "Where relevant, formulations and methods also align with recognized industrial and environmental guidance used by our customer segments.",
@@ -33,7 +32,7 @@ export const qualityContent = {
     {
       title: "In-house R&D for better programs",
       imagePosition: "right",
-      image: "/images/quality/istockphoto-909908830-612x612-1.jpg",
+      image: "/images/quality/rnd.jpg",
       paragraphs: [
         "Our lab team refines inhibitors, biocides, and process aids using plant feedback — improving stability, handling, and treatment results under Indian operating conditions.",
       ],
@@ -41,7 +40,7 @@ export const qualityContent = {
     {
       title: "Wet lab support for your water",
       imagePosition: "left",
-      image: "/images/quality/istockphoto-537040913-612x612-1.jpg",
+      image: "/images/quality/wet-lab.jpg",
       paragraphs: [
         "Customer water samples are evaluated so recommendations match actual hardness, contamination, and process constraints — then performance can be reviewed again after dosing starts.",
       ],
@@ -49,7 +48,7 @@ export const qualityContent = {
     {
       title: "Ongoing checks after release",
       imagePosition: "right",
-      image: "/images/quality/operation-land.png",
+      image: "/images/quality/monitoring.jpg",
       paragraphs: [
         "Quality does not stop at dispatch. We keep watching batch consistency and field feedback so programs stay effective over time.",
       ],
@@ -71,7 +70,7 @@ export const qualityContent = {
     {
       title: "Sustainability as a quality metric",
       imagePosition: "left",
-      image: "/images/quality/istockphoto-90360989-612x612-1.jpg",
+      image: "/images/quality/sustainability.jpg",
       paragraphs: [
         `We design for effective treatment with responsible chemistry — helping plants protect assets while reducing unnecessary chemical load and environmental impact.`,
       ],

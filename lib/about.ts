@@ -4,7 +4,7 @@ export const aboutContent = {
   intro: {
     eyebrow: "Company profile",
     title: "Industrial water programs designed for Indian plants",
-    image: "/images/etp-plant.jpg",
+    image: "/images/about/intro.jpg",
     paragraphs: [
       `${site.fullName} formulates and supplies specialty water-treatment chemicals for boilers, cooling towers, chillers, RO systems, effluent plants, and process applications.`,
       "Alongside chemistry, we support ETP, STP, RO, softening, and DM plant needs — so operations teams get products and practical guidance from one accountable partner.",
@@ -15,7 +15,7 @@ export const aboutContent = {
       id: "legacy",
       title: "Experience that shows up on the shop floor",
       variant: "tint-text-left" as const,
-      image: "/images/about-image-4.png",
+      image: "/images/about/legacy.jpg",
       imageStyle: "plain" as const,
       items: [
         `Decades of water-treatment work have shaped how ${site.name} selects chemistry, recommends dosing, and supports plant teams.`,
@@ -27,7 +27,7 @@ export const aboutContent = {
       id: "products",
       title: "What we manufacture and deliver",
       variant: "plain-image-left" as const,
-      image: "/images/experiments-chemistry-lab-conducting-experiment-laboratory-scaled.jpg",
+      image: "/images/about/products.jpg",
       imageStyle: "plain" as const,
       items: [
         "Specialty treatment chemicals for boilers, cooling towers, chillers, RO membranes, and effluent circuits.",
@@ -40,7 +40,7 @@ export const aboutContent = {
       id: "commitment",
       title: "Quality and responsibility in every batch",
       variant: "tint-text-left" as const,
-      image: "/images/coworkers-stacking-hands-together-scaled.jpg",
+      image: "/images/about/commitment.jpg",
       imageStyle: "plain" as const,
       items: [
         "Every product line is checked against performance and consistency standards before it reaches your plant.",
@@ -52,7 +52,7 @@ export const aboutContent = {
       id: "customer-focus",
       title: "Partnership beyond product supply",
       variant: "plain-image-left" as const,
-      image: "/images/customer-focus-text-write-paper-concept_384948-11990.jpg",
+      image: "/images/about/customer.jpg",
       imageStyle: "plain" as const,
       items: [
         "We start with your water analysis, equipment, and production constraints before recommending a program.",
@@ -64,7 +64,7 @@ export const aboutContent = {
       id: "innovation",
       title: "Improving formulations with plant feedback",
       variant: "tint-text-left" as const,
-      image: "/images/branding-innovation-creative-inspire-concept-scaled.jpg",
+      image: "/images/about/innovation.jpg",
       imageStyle: "plain" as const,
       items: [
         "Our lab and application teams refine products using real operating data from industrial customers.",
@@ -76,7 +76,7 @@ export const aboutContent = {
       id: "vision",
       title: "Where we are headed",
       variant: "plain-image-left" as const,
-      image: "/images/hero-2.webp",
+      image: "/images/about/vision.webp",
       imageStyle: "plain" as const,
       items: [
         `We aim to be the preferred water-treatment partner for industries that need reliable chemistry, clear advice, and accountable service.`,

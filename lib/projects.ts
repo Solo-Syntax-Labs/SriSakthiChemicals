@@ -27,7 +27,7 @@ export const projectsContent = {
   ],
   stpBenefits: {
     title: "Why plants choose this STP approach",
-    background: "/images/projects/vecteezy_waste-water-in-pond-wastewater-and-hazardous-waste_27541136-scaled.jpg",
+    background: "/images/projects/stp-benefits.jpg",
     align: "left" as const,
     items: [
       {
@@ -58,7 +58,7 @@ export const projectsContent = {
   },
   technicalBackground: {
     title: "Technical background in brief",
-    background: "/images/projects/stp-technical-bg-image.jpg",
+    background: "/images/projects/stp-technical.jpg",
     align: "right" as const,
     items: [
       {
@@ -85,7 +85,7 @@ export const projectsContent = {
   plants: [
     {
       title: "Reverse Osmosis (RO) plants",
-      image: "/images/projects/ro-image-2-transformed-e1727238234482.jpeg",
+      image: "/images/projects/ro-plant.png",
       imagePosition: "right",
       items: [
         "Removes dissolved salts and contaminants for process-ready water.",
@@ -96,7 +96,7 @@ export const projectsContent = {
     },
     {
       title: "Softening plants",
-      image: "/images/projects/softening-plants.jpg",
+      image: "/images/projects/softening.jpg",
       imagePosition: "left",
       items: [
         "Removes hardness ions that drive scale in boilers and cooling loops.",
@@ -107,7 +107,7 @@ export const projectsContent = {
     },
     {
       title: "Deionization (DM) plants",
-      image: "/images/projects/dm-water-treatment-plant-for-sugar.jpg",
+      image: "/images/projects/dm-plant.jpg",
       imagePosition: "right",
       items: [
         "Delivers low-conductivity water for high-purity industrial uses.",

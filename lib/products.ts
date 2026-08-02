@@ -36,7 +36,7 @@ export const products: ProductPageData[] = [
     icon: "/images/06.png",
     range: {
       heading: "Our Product Range Includes",
-      sideImage: "/images/products/boiler-image-2.jpg",
+      sideImage: "/images/products/boiler-main.jpg",
       items: [
         {
           title: "Antiscalants",
@@ -77,7 +77,7 @@ export const products: ProductPageData[] = [
     },
     secondary: {
       heading: "Benefits of Our Boiler Treatment Chemicals",
-      sideImage: "/images/products/boiler-image-e1727154377503.jpeg",
+      sideImage: "/images/products/boiler-detail.jpg",
       variant: "benefits",
       items: [
         {
@@ -113,7 +113,7 @@ export const products: ProductPageData[] = [
     icon: "/images/cooling-tower.png",
     range: {
       heading: "Our Product Range Includes",
-      sideImage: "/images/products/cooling-tower-1.jpg",
+      sideImage: "/images/products/cooling-main.jpg",
       items: [
         {
           title: "Antiscalants",
@@ -154,7 +154,7 @@ export const products: ProductPageData[] = [
     },
     secondary: {
       heading: "Benefits of Cooling Tower Treatment Chemicals",
-      sideImage: "/images/products/cooling-tower-working.jpg",
+      sideImage: "/images/products/cooling-detail.jpg",
       variant: "benefits",
       items: [
         {
@@ -190,7 +190,7 @@ export const products: ProductPageData[] = [
     icon: "/images/chiller.png",
     range: {
       heading: "Our Product Range Includes",
-      sideImage: "/images/products/cooling-tower-1.jpg",
+      sideImage: "/images/products/chiller-main.jpg",
       items: [
         {
           title: "Corrosion Inhibitors",
@@ -221,7 +221,7 @@ export const products: ProductPageData[] = [
     },
     secondary: {
       heading: "Benefits of Our Chillers Treatment Chemicals",
-      sideImage: "/images/products/cooling-tower-working.jpg",
+      sideImage: "/images/products/chiller-detail.jpg",
       variant: "benefits",
       items: [
         {
@@ -257,7 +257,7 @@ export const products: ProductPageData[] = [
     icon: "/images/sea-water.png",
     range: {
       heading: "Our Product Range Includes",
-      sideImage: "/images/products/ro-image-new-1.jpg",
+      sideImage: "/images/products/ro-main.jpg",
       items: [
         {
           title: "Antiscalants",
@@ -288,7 +288,7 @@ export const products: ProductPageData[] = [
     },
     secondary: {
       heading: "Key Features of Our Reverse Osmosis and Desalination Chemicals",
-      sideImage: "/images/products/ro-new-image-2.png",
+      sideImage: "/images/products/ro-detail.png",
       variant: "benefits",
       items: [
         {
@@ -319,7 +319,7 @@ export const products: ProductPageData[] = [
     icon: "/images/purification.png",
     range: {
       heading: "Our Product Range Includes",
-      sideImage: "/images/products/Effluent-Treatment-Plant.jpg",
+      sideImage: "/images/products/etp-main.jpg",
       items: [
         {
           title: "Decolorants",
@@ -350,7 +350,7 @@ export const products: ProductPageData[] = [
     },
     secondary: {
       heading: "Benefits of Our Effluent Treatment Chemicals",
-      sideImage: "/images/products/s8.jpg",
+      sideImage: "/images/products/etp-detail.jpg",
       variant: "benefits",
       items: [
         {
@@ -381,8 +381,7 @@ export const products: ProductPageData[] = [
     icon: "/images/06.png",
     range: {
       heading: "Our Product Range Includes",
-      sideImage:
-        "/images/products/experiments-chemistry-lab-conducting-experiment-laboratory-scaled.jpg",
+      sideImage: "/images/products/defoamer-main.jpg",
       items: [
         {
           title: "Silicone Defoamers",
@@ -398,7 +397,7 @@ export const products: ProductPageData[] = [
     },
     secondary: {
       heading: "Benefits of Our Defoamers",
-      sideImage: "/images/products/upgrade.png",
+      sideImage: "/images/products/defoamer-detail.jpg",
       variant: "benefits",
       items: [
         {
@@ -419,7 +418,7 @@ export const products: ProductPageData[] = [
     icon: "/images/sugar.png",
     range: {
       heading: "For Paper Industries:",
-      sideImage: "/images/products/Paper-Mills-Pivoting-to-Meet-Market-Demand.png",
+      sideImage: "/images/products/paper-main.jpg",
       items: [
         {
           title: "Retention Aids",
@@ -445,7 +444,7 @@ export const products: ProductPageData[] = [
     },
     secondary: {
       heading: "For Sugar Industries",
-      sideImage: "/images/products/3320-saharnye_zavody.png",
+      sideImage: "/images/products/sugar-detail.jpg",
       variant: "product-list",
       items: [
         {
