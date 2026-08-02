@@ -11,9 +11,10 @@ export default function ClientsSection() {
 
   useEffect(() => {
     const updateVisible = () => {
+      // Keep in sync with `.client-track` media queries in globals.css
       if (window.innerWidth <= 480) setVisible(1);
-      else if (window.innerWidth <= 700) setVisible(2);
-      else if (window.innerWidth <= 1023) setVisible(3);
+      else if (window.innerWidth <= 768) setVisible(2);
+      else if (window.innerWidth <= 1280) setVisible(3);
       else setVisible(4);
     };
     updateVisible();
@@ -46,7 +47,10 @@ export default function ClientsSection() {
             >
               ‹
             </button>
-            <div className="client-track">
+            <div
+              className="client-track"
+              style={{ ["--client-cols" as string]: String(visible) }}
+            >
               {items.map((client, i) => (
                 <div className="client-logo" key={`${client.src}-${i}`}>
                   <Image

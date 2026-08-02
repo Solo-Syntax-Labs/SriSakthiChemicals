@@ -537,7 +537,7 @@ p {
 /* About */
 .homepage-section-1 {
   padding: 50px 0;
-  background: url("/images/about-bg.png") center / cover no-repeat;
+  background: var(--bg-about) center / cover no-repeat;
 }
 
 .homepage-sec-1-cont {
@@ -806,7 +806,7 @@ p {
 .client-track {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(var(--client-cols, 4), minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -842,7 +842,7 @@ p {
 /* Footer */
 .footer-section {
   padding: 50px 0 20px;
-  background: url("/images/footer-bg.jpg") center / cover no-repeat;
+  background: var(--bg-footer) center / cover no-repeat;
   color: #fff;
 }
 
@@ -964,7 +964,7 @@ p {
   }
 
   .client-track {
-    grid-template-columns: repeat(3, 1fr);
+    --client-cols: 3;
   }
 }
 
@@ -1225,7 +1225,7 @@ p {
   }
 
   .client-track {
-    grid-template-columns: repeat(2, 1fr);
+    --client-cols: 2;
   }
 
   .plant-slide {
@@ -1729,7 +1729,7 @@ ul.breadcrumb li a:hover {
   top: 6px;
   width: 14px;
   height: 14px;
-  background: url("/images/water-drop.png") center / contain no-repeat;
+  background: var(--bg-water-drop) center / contain no-repeat;
 }
 
 .benifits-div h4 {
@@ -2177,7 +2177,7 @@ ul.breadcrumb li a:hover {
   top: 6px;
   width: 14px;
   height: 14px;
-  background: url("/images/water-drop.png") center / contain no-repeat;
+  background: var(--bg-water-drop) center / contain no-repeat;
 }
 
 .quality-sec-1-left .benifits-div h4 {
@@ -2268,7 +2268,7 @@ ul.breadcrumb li a:hover {
   top: 6px;
   width: 14px;
   height: 14px;
-  background: url("/images/water-drop.png") center / contain no-repeat;
+  background: var(--bg-water-drop) center / contain no-repeat;
 }
 
 .ro-plant-bg {
@@ -2331,7 +2331,7 @@ ul.breadcrumb li a:hover {
   top: 6px;
   width: 14px;
   height: 14px;
-  background: url("/images/water-drop.png") center / contain no-repeat;
+  background: var(--bg-water-drop) center / contain no-repeat;
 }
 
 .projects-plant-copy .benifits-div p {
@@ -2839,7 +2839,7 @@ ul.breadcrumb li a:hover {
   }
 
   .client-track {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --client-cols: 2;
     gap: 10px;
   }
 
@@ -3215,7 +3215,7 @@ ul.breadcrumb li a:hover {
   }
 
   .client-track {
-    grid-template-columns: 1fr;
+    --client-cols: 1;
   }
 
   .homepage-sec-1-right h1 {

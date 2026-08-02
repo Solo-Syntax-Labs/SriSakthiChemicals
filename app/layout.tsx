@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans, Outfit } from "next/font/google";
+import type { CSSProperties } from "react";
 import PageLoader from "@/components/PageLoader";
 import "./globals.css";
 
@@ -26,8 +27,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const assetVars = {
+    "--bg-about": `url("${assetPrefix}/images/about-bg.png")`,
+    "--bg-footer": `url("${assetPrefix}/images/footer-bg.jpg")`,
+    "--bg-water-drop": `url("${assetPrefix}/images/water-drop.png")`,
+  } as CSSProperties;
+
   return (
-    <html lang="en" className={`${outfit.variable} ${openSans.variable} h-full`}>
+    <html
+      lang="en"
+      className={`${outfit.variable} ${openSans.variable} h-full`}
+      style={assetVars}
+    >
       <body className="min-h-full flex flex-col antialiased">
         <PageLoader />
         {children}
