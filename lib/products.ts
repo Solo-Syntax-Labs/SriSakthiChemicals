@@ -96,7 +96,7 @@ export const products: ProductPageData[] = [
             "Our solutions are formulated to be environmentally friendly, helping industries meet regulatory requirements while maintaining performance.",
         },
         {
-          title: "Customized Solutions",
+          title: "Customized Products",
           description:
             "We offer tailored formulations to suit the specific needs of different boiler pressure ranges and industry requirements.",
         },
@@ -173,7 +173,7 @@ export const products: ProductPageData[] = [
             "Our biocides effectively prevent the growth of harmful bacteria and algae, ensuring a cleaner and healthier system.",
         },
         {
-          title: "Customized Solutions",
+          title: "Customized Products",
           description:
             "We offer tailored formulations to suit the specific needs of different cooling systems and industry requirements.",
         },
@@ -354,7 +354,7 @@ export const products: ProductPageData[] = [
       variant: "benefits",
       items: [
         {
-          title: "Industry-Specific Solutions",
+          title: "Industry-Specific Products",
           description:
             "Tailored products for a wide range of industries, ensuring optimal treatment efficiency.",
         },
@@ -402,7 +402,7 @@ export const products: ProductPageData[] = [
       variant: "benefits",
       items: [
         {
-          title: "Tailored Solutions",
+          title: "Tailored Products",
           description:
             "We first analyze the customer’s process to determine the type of defoamer that will be most effective. Based on our evaluation, we suggest the most suitable product from our extensive range of defoamers, ensuring optimal foam control for each unique application.",
         },

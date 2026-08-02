@@ -15,7 +15,7 @@ export default function PageBanner({ title, crumbs }: PageBannerProps) {
   return (
     <section className="inner-banner">
       <Image
-        src="/images/inner-banner-scaled.jpg"
+        src="/images/hero-2.webp"
         alt=""
         fill
         priority
@@ -23,7 +23,9 @@ export default function PageBanner({ title, crumbs }: PageBannerProps) {
         className="inner-banner-bg"
       />
       <div className="inner-banner-overlay" />
+      <div className="inner-banner-glow" aria-hidden />
       <div className="inner-banner-section">
+        <p className="inner-banner-kicker">Indigon</p>
         <h3>{title}</h3>
         <ul className="breadcrumb">
           {items.map((item) => (

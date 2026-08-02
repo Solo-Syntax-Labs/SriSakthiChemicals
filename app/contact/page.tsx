@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: `Contact – ${site.legalName}`,
   description:
-    "Contact Indigon Tech India Pvt Ltd for water treatment chemicals, plant solutions, and technical support.",
+    "Contact Indigon Tech India Pvt Ltd for water treatment chemicals, plant products, and technical support.",
 };
 
 export default function ContactPage() {

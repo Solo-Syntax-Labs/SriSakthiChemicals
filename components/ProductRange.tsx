@@ -9,14 +9,14 @@ export default function ProductRange() {
         <h3>Our Product Range</h3>
         <div className="homepage-sec-2-cont">
           <div className="homepage-sec-2-left">
-            <h2>Redefining Excellence through chemical expertise</h2>
+            <h2>Chemistry engineered for industrial reliability</h2>
             <p>
               At {site.fullName}, we provide a comprehensive range of boiler water
               treatment chemicals for low, medium, and high-pressure boilers,
               including power plant boilers.
             </p>
             <Link href="/products/boiler-treatment-chemicals">
-              <button type="button">Know More</button>
+              <button type="button">View products</button>
             </Link>
           </div>
           <div className="homepage-sec-2-right">

@@ -8,11 +8,13 @@ import SiteShell from "@/components/SiteShell";
 export default function Home() {
   return (
     <SiteShell>
-      <HeroSlider />
-      <AboutSection />
-      <ProductRange />
-      <PlantSlider />
-      <ClientsSection />
+      <div className="home-page">
+        <HeroSlider />
+        <AboutSection />
+        <ProductRange />
+        <PlantSlider />
+        <ClientsSection />
+      </div>
     </SiteShell>
   );
 }

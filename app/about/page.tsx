@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `About – ${site.legalName}`,
-  description: `Learn about ${site.fullName}, our legacy, solutions, commitment, and vision in industrial water treatment.`,
+  description: `Learn about ${site.fullName}, our legacy, products, commitment, and vision in industrial water treatment.`,
 };
 
 export default function AboutPage() {

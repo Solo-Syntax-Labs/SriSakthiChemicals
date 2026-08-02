@@ -90,7 +90,7 @@ export const servicesContent = {
             description: "Decrease emissions and contribute to a greener operation.",
           },
           {
-            title: "Tailored Solutions",
+            title: "Tailored Products",
             description:
               "We customize our services to meet the specific needs of your facility, ensuring maximum benefit.",
           },

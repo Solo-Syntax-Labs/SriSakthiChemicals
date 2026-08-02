@@ -37,7 +37,7 @@ export default function AboutPageContent() {
           ? section.id === "legacy"
             ? "about-section-2"
             : "about-sec-4"
-          : section.id === "solutions"
+          : section.id === "products"
             ? "about-sec-3"
             : "about-sec-5";
 

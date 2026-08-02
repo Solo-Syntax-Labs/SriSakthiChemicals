@@ -8,19 +8,19 @@ export default function AboutSection() {
       <div className="container">
         <div className="homepage-sec-1-cont">
           <div className="homepage-sec-1-left">
-            <Image
-              src="/images/04.png"
-              alt="Indigon water treatment solutions"
-              width={720}
-              height={720}
-              className="about-main-image"
-            />
+            <div className="home-about-media">
+              <Image
+                src="/images/04.png"
+                alt="Indigon water treatment solutions"
+                width={720}
+                height={720}
+                className="about-main-image"
+              />
+            </div>
           </div>
           <div className="homepage-sec-1-right">
-            <div className="blurred-logo">
-              <Image src="/images/03.png" alt="" width={180} height={180} />
-            </div>
-            <h1>About</h1>
+            <p className="section-kicker">Who we are</p>
+            <h1>About Indigon</h1>
             <h2>Empowering Industries with Chemical Ingenuity</h2>
             <p>
               {site.fullName} was founded with a clear vision: to revolutionize
@@ -30,7 +30,7 @@ export default function AboutSection() {
               treatment solutions to industries across various sectors.
             </p>
             <Link href="/about">
-              <button type="button">Know More</button>
+              <button type="button">Explore our story</button>
             </Link>
           </div>
         </div>

@@ -9,15 +9,16 @@ export default function Footer() {
         <div className="container">
           <div className="footer-cont">
             <div className="footer-sec-top">
-              <div className="footer-logo">
-                <Link href="/">
+              <div className="footer-brand">
+                <Link href="/" className="footer-logo">
                   <Image
                     src="/images/01-e1726215296786.png"
                     alt={`${site.name} logo`}
-                    width={90}
-                    height={90}
+                    width={72}
+                    height={72}
                   />
                 </Link>
+                <p className="footer-brand-name">{site.legalName}</p>
               </div>
               <div className="footer-content">
                 <p>
@@ -121,12 +122,12 @@ export default function Footer() {
             <div className="copy-right-section">
               <div className="copy-right">
                 <p>
-                  Copy right ©{" "}
+                  Copyright ©{" "}
                   <Link href="/">{site.legalName}</Link>
                 </p>
               </div>
               <div className="designed-by">
-                <p>Designed for Indigon</p>
+                <p>Built for Indigon</p>
               </div>
             </div>
           </div>

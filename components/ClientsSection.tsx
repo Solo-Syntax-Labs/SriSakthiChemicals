@@ -11,7 +11,6 @@ export default function ClientsSection() {
 
   useEffect(() => {
     const updateVisible = () => {
-      // Keep in sync with `.client-track` media queries in globals.css
       if (window.innerWidth <= 480) setVisible(1);
       else if (window.innerWidth <= 768) setVisible(2);
       else if (window.innerWidth <= 1280) setVisible(3);
@@ -34,16 +33,25 @@ export default function ClientsSection() {
   });
 
   return (
-    <section className="homepage-sec-3">
+    <section className="homepage-sec-3 home-clients">
       <div className="container">
         <div className="homepage-sec-3-cont">
-          <h1>Valuable Clients</h1>
+          <div className="clients-heading">
+            <p className="section-kicker">Trusted partnerships</p>
+            <h2>Valuable Clients</h2>
+            <p>
+              Industries across manufacturing, power, and process plants rely on
+              Indigon chemistry and technical support.
+            </p>
+          </div>
           <div className="logo-container">
             <button
               type="button"
               className="client-nav client-nav-prev"
               aria-label="Previous clients"
-              onClick={() => setIndex((current) => (current - 1 + clients.length) % clients.length)}
+              onClick={() =>
+                setIndex((current) => (current - 1 + clients.length) % clients.length)
+              }
             >
               ‹
             </button>

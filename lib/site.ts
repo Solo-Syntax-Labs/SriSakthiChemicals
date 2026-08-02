@@ -75,7 +75,7 @@ export const site = {
     },
     {
       image: "/images/hero-3.gif",
-      eyebrow: "Plant Solutions",
+      eyebrow: "Plant Products",
       title: "Advanced Treatment Built for",
       highlight: "INDUSTRIAL PERFORMANCE.",
     },

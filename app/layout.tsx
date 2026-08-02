@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans, Outfit } from "next/font/google";
+import Script from "next/script";
 import type { CSSProperties } from "react";
 import PageLoader from "@/components/PageLoader";
 import "./globals.css";
@@ -19,7 +20,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Indigon - Tech India Pvt Ltd",
   description:
-    "Indigon Tech India Private Limited provides industrial water treatment chemicals and plant solutions across boiler, cooling tower, RO, ETP, and process applications.",
+    "Indigon Tech India Private Limited provides industrial water treatment chemicals and plant products across boiler, cooling tower, RO, ETP, and process applications.",
 };
 
 export default function RootLayout({
@@ -37,10 +38,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-theme="dark"
       className={`${outfit.variable} ${openSans.variable} h-full`}
       style={assetVars}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col antialiased">
+        <Script id="indigon-theme-init" strategy="beforeInteractive">
+          {`(function(){try{var t=localStorage.getItem('indigon-theme-v2');if(t!=='light'&&t!=='dark'){t='dark';localStorage.setItem('indigon-theme-v2',t);}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`}
+        </Script>
         <PageLoader />
         {children}
       </body>

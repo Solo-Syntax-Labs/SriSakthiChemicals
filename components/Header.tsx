@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import ThemeToggle from "@/components/ThemeToggle";
 import { site } from "@/lib/site";
 
 export default function Header() {
@@ -66,31 +67,35 @@ export default function Header() {
             </div>
 
             <div className="header-sec-right">
-              <div className="header-sec-contact">
-                <p>
-                  For Enquires:{" "}
-                  {site.phones.map((phone, index) => (
-                    <span key={phone}>
-                      <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>
-                      {index < site.phones.length - 1 ? ", " : ""}
-                    </span>
-                  ))}
-                </p>
+              <div className="header-top-row">
+                <div className="header-sec-contact">
+                  <p>
+                    For Enquires:{" "}
+                    {site.phones.map((phone, index) => (
+                      <span key={phone}>
+                        <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>
+                        {index < site.phones.length - 1 ? ", " : ""}
+                      </span>
+                    ))}
+                  </p>
+                </div>
+                <div className="header-toolbar">
+                  <ThemeToggle />
+                  <button
+                    className={`menu-toggle ${open ? "is-open" : ""}`}
+                    aria-label="Toggle Menu"
+                    aria-expanded={open}
+                    onClick={() => setOpen((value) => !value)}
+                    type="button"
+                  >
+                    <span />
+                    <span />
+                    <span />
+                  </button>
+                </div>
               </div>
 
               <div className="header-sec-menu">
-                <button
-                  className={`menu-toggle ${open ? "is-open" : ""}`}
-                  aria-label="Toggle Menu"
-                  aria-expanded={open}
-                  onClick={() => setOpen((value) => !value)}
-                  type="button"
-                >
-                  <span />
-                  <span />
-                  <span />
-                </button>
-
                 <button
                   type="button"
                   className={`nav-backdrop ${open ? "is-open" : ""}`}

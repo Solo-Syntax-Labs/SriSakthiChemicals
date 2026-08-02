@@ -35,7 +35,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   return (
     <SiteShell>
       <PageBanner
-        title="Our Products"
+        title={product.shortLabel}
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Products", href: "/products" },

@@ -24,8 +24,8 @@ export const aboutContent = {
       ],
     },
     {
-      id: "solutions",
-      title: "OUR SOLUTIONS",
+      id: "products",
+      title: "OUR PRODUCTS",
       variant: "plain-image-left" as const,
       image: "/images/experiments-chemistry-lab-conducting-experiment-laboratory-scaled.jpg",
       imageStyle: "slant" as const,
