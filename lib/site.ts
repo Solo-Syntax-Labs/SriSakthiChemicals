@@ -19,7 +19,6 @@ export const site = {
   slogan: "Globe in Palm to Grow",
   people: ["Mr. V. Bala Krishnan", "Mr. B. Kapilan"],
   phones: ["+91 98652 51577", "+91 94433 75330", "+91 96268 13034"],
-  landline: "",
   emails: ["srisakthichemdu@gmail.com", "balassm.1972@gmail.com"],
   address: [
     "Plot No: 38, New Kurinji Residency,",

@@ -70,11 +70,6 @@ export default function Footer() {
                           <br />
                         </span>
                       ))}
-                      {site.landline ? (
-                        <a href={`tel:${site.landline.replace(/\s/g, "")}`}>
-                          {site.landline}
-                        </a>
-                      ) : null}
                     </span>
                   </li>
                   <li>

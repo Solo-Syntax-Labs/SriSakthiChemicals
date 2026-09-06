@@ -2,7 +2,7 @@ import ContactForm from "@/components/contact/ContactForm";
 import { site } from "@/lib/site";
 
 const mapEmbedUrl =
-  "https://www.google.com/maps?q=Plot+No+38+New+Kurinji+Residency+Pandi+Kovil+Ring+Road+Karuppayurani+East+Anna+Nagar+Madurai+625020&output=embed";
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15720!2d78.166667!3d9.932778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnNTguMCJOIDc4wrAxMCcwLjAiRQ!5e0!3m2!1sen!2sin!4v1726491325706!5m2!1sen!2sin";
 
 function LocationIcon() {
   return (
@@ -90,11 +90,6 @@ export default function ContactPageContent() {
                       <br />
                     </span>
                   ))}
-                  {site.landline ? (
-                    <a href={`tel:${site.landline.replace(/\s/g, "")}`}>
-                      {site.landline}
-                    </a>
-                  ) : null}
                 </div>
               </div>
             </div>

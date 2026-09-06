@@ -21,8 +21,20 @@ const openSans = Open_Sans({
 const siteDescription =
   "Manufacturer and exporter of water treatment chemicals and speciality additives for boilers, cooling towers, RO, effluent plants, and process industries.";
 
+/** Prefer GitHub Pages origin+basePath when exporting; otherwise marketing site URL. */
+function getMetadataBase(): URL {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  if (basePath) {
+    return new URL(`https://solo-syntax-labs.github.io${basePath}/`);
+  }
+  const siteUrl = site.website.startsWith("http")
+    ? site.website
+    : `https://${site.website}`;
+  return new URL(siteUrl.endsWith("/") ? siteUrl : `${siteUrl}/`);
+}
+
 export const metadata: Metadata = {
-  metadataBase: new URL(site.website.startsWith("http") ? site.website : `https://${site.website}`),
+  metadataBase: getMetadataBase(),
   title: {
     default: site.legalName,
     template: `%s | ${site.name}`,
