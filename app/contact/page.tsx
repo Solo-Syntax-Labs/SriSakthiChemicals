@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import ContactPageContent from "@/components/contact/ContactPageContent";
 import PageBanner from "@/components/PageBanner";
 import SiteShell from "@/components/SiteShell";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Contact – ${site.legalName}`,
+  title: "Contact",
   description:
-    "Contact Indigon Tech India Pvt Ltd for water treatment chemicals, plant products, and technical support.",
+    "Contact Sri Sakthi Chemicals (P) Ltd for water treatment chemicals, specialty additives, and technical application support.",
 };
 
 export default function ContactPage() {

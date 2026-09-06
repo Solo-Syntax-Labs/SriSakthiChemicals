@@ -31,74 +31,69 @@ export const products: ProductPageData[] = [
     title: "Boiler Treatment Chemicals",
     shortLabel: "Boiler",
     description:
-      "Boiler water treatment chemicals for low, medium, and high-pressure boilers, including power plant boilers.",
-    intro: `At ${site.fullName}, we provide a comprehensive range of boiler water treatment chemicals for low, medium, and high-pressure boilers, including power plant boilers. Our solutions are designed to optimize boiler performance, prevent corrosion, and enhance energy efficiency. We ensure that our products meet stringent quality standards and offer environmental benefits.`,
+      "Boiler water and fireside treatment programs for low- and high-pressure boilers.",
+    intro: `At ${site.fullName}, we supply boiler water treatment programs and fireside additives designed to control corrosion, scale, and deposits while supporting cleaner combustion and longer equipment life.`,
     icon: "/images/06.png",
     range: {
-      heading: "Our Product Range Includes",
+      heading: "Boiler water treatment programs",
       sideImage: "/images/products/boiler-main.jpg",
       items: [
         {
-          title: "Antiscalants",
+          title: "Single-drum LP programs",
           description:
-            "Prevent the formation of scale deposits in boilers, ensuring efficient heat transfer and prolonging the lifespan of boiler equipment.",
+            "Corrosion, pH, and scale control products formulated for low-pressure boilers in a convenient single-drum approach.",
         },
         {
-          title: "Corrosion Inhibitors",
+          title: "Multifunctional tannin blends",
           description:
-            "Protect internal boiler surfaces from corrosion by forming a protective film, reducing maintenance costs and extending equipment life.",
+            "Special tannin blends suited to LP and HP boilers for combined protection and deposit control.",
         },
         {
-          title: "Oxygen Scavengers",
+          title: "Oxygen scavengers",
           description:
-            "Remove dissolved oxygen in feed water to prevent pitting and corrosion in boilers and pre-boiler systems.",
+            "Non-toxic, non-carcinogenic oxygen scavengers that help prevent pitting and corrosion in feedwater and boiler circuits.",
         },
         {
-          title: "pH Boosters",
+          title: "Condensate corrosion protectors",
           description:
-            "Regulate the pH level in the boiler water, preventing acidic or alkaline corrosion and enhancing the overall efficiency of the boiler system.",
+            "Near-end and far-end steam condensate corrosion protection to safeguard return lines and heat-transfer surfaces.",
         },
         {
-          title: "Descalants",
+          title: "Online & offline cleaners",
           description:
-            "Effectively remove scale buildup from boiler surfaces, restoring optimal heat transfer and improving boiler efficiency.",
-        },
-        {
-          title: "Wet Lay-Up Chemicals",
-          description:
-            "Designed for the protection of boilers during shutdown periods, these chemicals prevent corrosion and preserve the internal integrity of the system.",
-        },
-        {
-          title: "Fireside Treatment Chemicals",
-          description:
-            "Improve combustion efficiency by enhancing unburnt carbon values, ensuring cleaner combustion, and reducing energy losses in the fire side of the boiler.",
+            "Cleaning products for removing deposits during operation or planned shutdowns.",
         },
       ],
     },
     secondary: {
-      heading: "Benefits of Our Boiler Treatment Chemicals",
+      heading: "Boiler fireside treatment programs",
       sideImage: "/images/products/boiler-detail.jpg",
-      variant: "benefits",
+      variant: "product-list",
       items: [
         {
-          title: "Enhanced Efficiency",
+          title: "Multifunctional additives",
           description:
-            "Our chemicals ensure optimal boiler performance by preventing scale and corrosion, resulting in better heat transfer and reduced energy consumption.",
+            "Fireside additives that support cleaner combustion and more stable heat-transfer performance.",
         },
         {
-          title: "Extended Equipment Life",
+          title: "Sludge & sediment dispersants",
           description:
-            "By protecting the internal and external surfaces of boilers, our products significantly extend equipment life, reducing downtime and maintenance costs.",
+            "Help keep fuel-side systems freer of sludge and sediment build-up.",
         },
         {
-          title: "Environmental Compliance",
+          title: "Fuel-system corrosion inhibitors",
           description:
-            "Our solutions are formulated to be environmentally friendly, helping industries meet regulatory requirements while maintaining performance.",
+            "Protect fuel handling and fireside metallurgy from corrosion attack.",
         },
         {
-          title: "Customized Products",
+          title: "Anti-oxidants & combustion improvers",
           description:
-            "We offer tailored formulations to suit the specific needs of different boiler pressure ranges and industry requirements.",
+            "Support combustion efficiency and reduce fouling tendency on heat-transfer surfaces.",
+        },
+        {
+          title: "Deposit & corrosion control agents",
+          description:
+            "Help clean dirty systems and control fireside deposits that waste fuel and raise stack temperatures.",
         },
       ],
     },
@@ -108,74 +103,69 @@ export const products: ProductPageData[] = [
     title: "Cooling Tower Treatment Chemicals",
     shortLabel: "Cooling Tower",
     description:
-      "Cooling water treatment chemicals to prevent corrosion, scaling, and biological growth in cooling towers.",
-    intro: `At ${site.fullName}, we supply a comprehensive range of cooling water treatment chemicals for industrial and power station cooling towers. Our advanced products are designed to enhance system performance, prevent corrosion and scaling, and control biological growth, ensuring optimal cooling tower efficiency.`,
+      "Cooling water treatment programs for corrosion, scale, fouling, and biological control.",
+    intro: `At ${site.fullName}, we supply cooling water treatment programs for industrial and utility cooling towers — protecting carbon steel and multimetal systems while controlling scale, fouling, and microbial growth.`,
     icon: "/images/cooling-tower.png",
     range: {
-      heading: "Our Product Range Includes",
+      heading: "Cooling water treatment programs",
       sideImage: "/images/products/cooling-main.jpg",
       items: [
         {
-          title: "Antiscalants",
+          title: "Corrosion inhibitors",
           description:
-            "Prevent the formation of scale in cooling systems, maintaining efficient heat exchange and preventing downtime.",
+            "Carbon steel and multimetal corrosion inhibitors that extend equipment life and reduce maintenance.",
         },
         {
-          title: "Corrosion and Scale Inhibitors",
+          title: "Antiscalants & antifoulants",
           description:
-            "Protect cooling system surfaces from corrosion and scale buildup, prolonging the life of equipment and reducing maintenance costs.",
+            "Control mineral scale and fouling that reduce heat-transfer efficiency.",
         },
         {
-          title: "Oxidizing and Non-Oxidizing Biocides",
+          title: "Special & bio-dispersants",
           description:
-            "Control microbial growth, including bacteria, fungi, and algae, to prevent biofouling and maintain clean surfaces in cooling towers.",
+            "Disperse deposits and biofilms so biocides and inhibitors work more effectively.",
         },
         {
-          title: "Bio-Dispersants",
+          title: "Non-oxidising biocides",
           description:
-            "Break down and disperse biofilms and organic matter, ensuring efficient biocide performance and preventing microbial growth.",
+            "Control bacteria, fungi, and algae that drive biofouling and hygiene risk.",
         },
         {
-          title: "Mineral Dispersants",
+          title: "Chlorine activators & ClO₂ precursors",
           description:
-            "Prevent the precipitation of minerals that cause scaling, keeping cooling systems clean and operating efficiently.",
+            "Chlorine activators plus chlorine dioxide precursors and generators for stronger disinfection control.",
         },
         {
-          title: "pH Neutralizers",
+          title: "Single-drum programs",
           description:
-            "Balance pH levels in cooling water to prevent acidic or alkaline conditions that can lead to corrosion or scaling.",
-        },
-        {
-          title: "Chlorine Dioxide Precursors and Generators",
-          description:
-            "Provide a powerful and controlled solution for disinfection and biofilm removal, ensuring consistent and effective microbial control.",
+            "Combined corrosion, scale, and deposit control products for simpler dosing on suitable systems.",
         },
       ],
     },
     secondary: {
-      heading: "Benefits of Cooling Tower Treatment Chemicals",
+      heading: "Benefits of SSC cooling programs",
       sideImage: "/images/products/cooling-detail.jpg",
       variant: "benefits",
       items: [
         {
-          title: "Corrosion Protection",
+          title: "Corrosion protection",
           description:
-            "Formulated to inhibit rust and corrosion, our chemicals extend the lifespan of cooling system components, minimizing maintenance costs.",
+            "Inhibitors help protect heat exchangers, piping, and tower metallurgy.",
         },
         {
-          title: "Scale Prevention",
+          title: "Scale & fouling control",
           description:
-            "By controlling scale formation, our chemicals maintain optimal flow rates and system performance, preventing costly downtime.",
+            "Cleaner surfaces support better heat transfer and more stable flow.",
         },
         {
-          title: "Microbial Control",
+          title: "Microbial control",
           description:
-            "Our biocides effectively prevent the growth of harmful bacteria and algae, ensuring a cleaner and healthier system.",
+            "Biocide and dispersant programs reduce biofilm and algae pressure.",
         },
         {
-          title: "Customized Products",
+          title: "Application support",
           description:
-            "We offer tailored formulations to suit the specific needs of different cooling systems and industry requirements.",
+            "Program selection and monitoring help keep chemistry matched to your tower duty.",
         },
       ],
     },
@@ -185,64 +175,64 @@ export const products: ProductPageData[] = [
     title: "Chillers Treatment Chemicals",
     shortLabel: "Chillers Treatment",
     description:
-      "Specialty chemicals for industrial chillers to control scale, corrosion, and microbial growth.",
-    intro: `At ${site.fullName}, we provide specialized chiller treatment chemicals formulated to protect closed-loop and open chiller systems. Our solutions help maintain heat-transfer efficiency, prevent corrosion and fouling, and support reliable cooling performance across industrial applications.`,
+      "Closed-system treatment programs for chillers and sealed cooling loops.",
+    intro: `At ${site.fullName}, we provide closed-system treatment programs — including nitrite, molybdate, and phosphonate-based approaches — to protect chillers and sealed loops from corrosion, scale, and deposits.`,
     icon: "/images/chiller.png",
     range: {
-      heading: "Our Product Range Includes",
+      heading: "Closed-system treatment programs",
       sideImage: "/images/products/chiller-main.jpg",
       items: [
         {
-          title: "Corrosion Inhibitors",
+          title: "Nitrite-based programs",
           description:
-            "Protect chiller metallurgy from rust and corrosion, extending equipment life and reducing maintenance frequency.",
+            "Closed-loop corrosion control suited to many chilled-water and sealed systems.",
         },
         {
-          title: "Scale Inhibitors",
+          title: "Molybdate-based programs",
           description:
-            "Control mineral scale formation on heat-exchange surfaces to maintain efficient cooling performance.",
+            "Multimetal protection options where molybdate chemistry is preferred.",
         },
         {
-          title: "Biocides",
+          title: "Phosphonate-based programs",
           description:
-            "Prevent microbial growth and biofilm formation that can reduce heat-transfer efficiency and cause fouling.",
+            "Deposit and corrosion support for closed circuits under industrial duty.",
         },
         {
-          title: "Dispersants",
+          title: "Scale & deposit control",
           description:
-            "Keep suspended solids and deposits dispersed for cleaner system operation and improved flow.",
+            "Help keep heat-exchange surfaces clean so chillers hold design efficiency.",
         },
         {
-          title: "pH Conditioners",
+          title: "System monitoring support",
           description:
-            "Maintain balanced water chemistry to protect chiller components and stabilize treatment programs.",
+            "Application guidance for inhibitor residuals, pH, and makeup quality.",
         },
       ],
     },
     secondary: {
-      heading: "Benefits of Our Chillers Treatment Chemicals",
+      heading: "Benefits of closed-loop programs",
       sideImage: "/images/products/chiller-detail.jpg",
       variant: "benefits",
       items: [
         {
-          title: "Improved Heat Transfer",
+          title: "Improved heat transfer",
           description:
-            "Cleaner heat-exchange surfaces help chillers run more efficiently with lower energy demand.",
+            "Cleaner surfaces help chillers run closer to design efficiency.",
         },
         {
-          title: "Equipment Protection",
+          title: "Equipment protection",
           description:
-            "Corrosion and scale control reduce wear, leakage risk, and unplanned downtime.",
+            "Corrosion and deposit control reduce wear and unplanned downtime.",
         },
         {
-          title: "Reliable Operation",
+          title: "Reliable operation",
           description:
-            "Balanced chemistry and microbial control support stable day-to-day chiller performance.",
+            "Balanced chemistry supports stable day-to-day closed-loop performance.",
         },
         {
-          title: "Customized Programs",
+          title: "Site-fit programs",
           description:
-            "Formulations can be tailored to system metallurgy, water quality, and operating conditions.",
+            "Formulations can be matched to metallurgy, water quality, and operating conditions.",
         },
       ],
     },
@@ -252,59 +242,59 @@ export const products: ProductPageData[] = [
     title: "Reverse Osmosis Treatment Chemicals",
     shortLabel: "Reverse Osmosis",
     description:
-      "RO treatment chemicals to prevent fouling, scaling, and biological growth while improving purification efficiency.",
-    intro: `At ${site.fullName}, we provide a complete range of reverse osmosis treatment chemicals that ensure the optimal performance and longevity of Reverse Osmosis systems. Our products are designed to prevent fouling, scaling, and biological growth, while enhancing the efficiency of water purification processes. All of our products are customized based on the specific input water quality, ensuring maximum effectiveness.`,
+      "RO membrane programs for antiscalants, cleaners, biocides, and permeate-line protection.",
+    intro: `At ${site.fullName}, we provide reverse osmosis treatment programs that prevent membrane scaling and fouling, support cleaning and sanitisation, and protect permeate supply lines.`,
     icon: "/images/sea-water.png",
     range: {
-      heading: "Our Product Range Includes",
+      heading: "RO treatment programs",
       sideImage: "/images/products/ro-main.jpg",
       items: [
         {
           title: "Antiscalants",
           description:
-            "Prevent scale formation on RO membranes, improving system efficiency and extending membrane life. These are custom-formulated based on the feed water quality.",
+            "Prevent scale formation on RO membranes and support longer membrane life.",
         },
         {
-          title: "Biocides",
+          title: "Membrane cleaners",
           description:
-            "Control the growth of microorganisms that can lead to biofouling in RO membranes, ensuring smooth operation and reduced maintenance.",
+            "Remove scale and fouling deposits to restore membrane performance.",
         },
         {
-          title: "pH Boosters",
+          title: "Membrane-compatible flocculants",
           description:
-            "Adjust and optimize the pH levels in RO feed water, protecting membranes from acidic or alkaline damage and improving system performance.",
+            "Optimise feed water clarification ahead of the RO train.",
         },
         {
-          title: "Membrane Descalants",
+          title: "Biocides for online & offline dosing",
           description:
-            "Effectively remove existing scale deposits from membranes, restoring their performance and preventing costly downtime.",
+            "Control biological growth during operation and sanitisation cycles.",
         },
         {
-          title: "Biological Cleaners",
+          title: "Chlorine reduction & permeate protection",
           description:
-            "Specialized cleaners designed to remove organic and biological fouling from membranes, enhancing their lifespan and ensuring consistent water quality.",
+            "Specialty chemicals for chlorine reduction and corrosion protection in permeate supply lines.",
         },
       ],
     },
     secondary: {
-      heading: "Key Features of Our Reverse Osmosis and Desalination Chemicals",
+      heading: "Key features of SSC RO chemistry",
       sideImage: "/images/products/ro-detail.png",
       variant: "benefits",
       items: [
         {
-          title: "Tailor-Made Formulations",
+          title: "Scale & fouling control",
           description:
-            "Each product is formulated based on specific water quality to ensure optimal performance.",
+            "Programs target both mineral scaling and membrane fouling mechanisms.",
         },
         {
-          title: "Improved System Longevity",
+          title: "Cleaning readiness",
           description:
-            "Our chemicals help prevent membrane fouling and scaling, extending system life and reducing maintenance costs.",
+            "Cleaners and biocides support planned recovery when performance drifts.",
         },
         {
-          title: "Enhanced Efficiency",
+          title: "Feed optimisation",
           description:
-            "By keeping membranes clean and functional, our solutions ensure the highest levels of water purification and desalination efficiency.",
+            "Flocculant options help improve pretreatment ahead of membranes.",
         },
       ],
     },
@@ -314,59 +304,54 @@ export const products: ProductPageData[] = [
     title: "Effluent Treatment Chemicals",
     shortLabel: "Effluent Water",
     description:
-      "Effluent treatment chemicals for textiles, dyeing, paper, sugar, automobile, mining, and more.",
-    intro: `${site.fullName} offers a comprehensive range of effluent treatment chemicals designed to meet the needs of diverse industries, including textiles, dyeing, paper, sugar, automobile, mining, and more. Our products are tailored to enhance the efficiency of industrial Effluent Treatment Plants (ETPs), ensuring compliance with environmental regulations and improving wastewater quality.`,
+      "Polymers, coagulants, and colour-removal aids for industrial effluent plants.",
+    intro: `${site.fullName} offers effluent treatment chemicals for textiles, dyeing, paper, sugar, and other industrial streams — helping ETPs clarify wastewater and move toward cleaner discharge.`,
     icon: "/images/purification.png",
     range: {
-      heading: "Our Product Range Includes",
+      heading: "Effluent treatment programs",
       sideImage: "/images/products/etp-main.jpg",
       items: [
         {
-          title: "Decolorants",
+          title: "Polymers",
           description:
-            "Effectively remove color from industrial effluents, particularly in industries like textiles and dyeing, helping to achieve regulatory discharge limits.",
+            "Wide range of non-ionic, cationic, and anionic polymers in medium and high molecular weights.",
         },
         {
           title: "Coagulants",
           description:
-            "Available in various types and combinations, these chemicals aid in the aggregation of suspended particles, facilitating their removal from wastewater.",
+            "Help separate suspended solids from water across varied effluent categories.",
         },
         {
-          title: "Anionic Polyelectrolytes",
+          title: "Colour removal aids",
           description:
-            "These are available with different charge densities and molecular weights, ideal for settling applications, helping to clarify wastewater by improving the sedimentation of solids.",
+            "Specialty colour-removal agents for textile and other coloured industrial effluents.",
         },
         {
-          title: "Cationic Polyelectrolytes",
+          title: "Coagulant & colour blends",
           description:
-            "Used for dewatering sludge and other industrial applications, these are formulated with varying charge densities and molecular weights to suit specific industrial needs.",
-        },
-        {
-          title: "Evaporator Antiscalants",
-          description:
-            "Prevent and loosen scale formation in evaporators, enhancing operational efficiency and extending equipment life.",
+            "Combined formulations matched to different effluent types and treatment trains.",
         },
       ],
     },
     secondary: {
-      heading: "Benefits of Our Effluent Treatment Chemicals",
+      heading: "Benefits of SSC effluent programs",
       sideImage: "/images/products/etp-detail.jpg",
       variant: "benefits",
       items: [
         {
-          title: "Industry-Specific Products",
+          title: "Industry-ready options",
           description:
-            "Tailored products for a wide range of industries, ensuring optimal treatment efficiency.",
+            "Product choices for textiles, paper, sugar, and broader industrial wastewater.",
         },
         {
-          title: "Regulatory Compliance",
+          title: "Clearer discharge path",
           description:
-            "Our chemicals help industries meet stringent environmental standards for wastewater discharge.",
+            "Better solids and colour removal support regulatory and reuse goals.",
         },
         {
-          title: "Enhanced Performance",
+          title: "Application guidance",
           description:
-            "Improve settling, dewatering, and color removal processes, resulting in cleaner and safer wastewater.",
+            "Program selection and monitoring help keep ETP performance stable.",
         },
       ],
     },
@@ -376,34 +361,34 @@ export const products: ProductPageData[] = [
     title: "Defoamers",
     shortLabel: "Defoamers",
     description:
-      "Silicone and non-silicone defoamers for paper, sugar, ETP evaporators, and other foaming processes.",
-    intro: `${site.fullName} offers a wide range of defoamers, designed to effectively control foam in various industrial processes. Our defoamers are widely used in industries such as paper processing, sugar distilleries (for fermenters), evaporators in effluent treatment plants (ETP), and any other applications where foaming occurs.`,
+      "Specialty defoamers for paper, sugar, effluent, and other foaming processes.",
+    intro: `${site.fullName} offers defoamers designed to control foam in paper processing, sugar operations, effluent evaporators, and other industrial applications where foam disrupts production.`,
     icon: "/images/06.png",
     range: {
-      heading: "Our Product Range Includes",
+      heading: "Defoamer range",
       sideImage: "/images/products/defoamer-main.jpg",
       items: [
         {
-          title: "Silicone Defoamers",
+          title: "Process defoamers",
           description:
-            "Efficient in controlling foam in a wide variety of industrial processes.",
+            "Control foam in paper, sugar, and general process streams without disrupting chemistry.",
         },
         {
-          title: "Non-Silicone Defoamers",
+          title: "Effluent & evaporator foam control",
           description:
-            "Suitable for applications where silicone-based products are not preferred.",
+            "Help keep ETP and evaporator operations stable when foam loads rise.",
         },
       ],
     },
     secondary: {
-      heading: "Benefits of Our Defoamers",
+      heading: "Benefits of SSC defoamers",
       sideImage: "/images/products/defoamer-detail.jpg",
       variant: "benefits",
       items: [
         {
-          title: "Tailored Products",
+          title: "Application-led selection",
           description:
-            "We first analyze the customer’s process to determine the type of defoamer that will be most effective. Based on our evaluation, we suggest the most suitable product from our extensive range of defoamers, ensuring optimal foam control for each unique application.",
+            "We review the process first, then recommend the defoamer that fits foam type and duty.",
         },
       ],
     },
@@ -413,64 +398,64 @@ export const products: ProductPageData[] = [
     title: "Paper & Sugar Processing Chemicals",
     shortLabel: "Paper & Sugar",
     description:
-      "Specialty chemicals that optimize efficiency and quality in paper and sugar industry processes.",
-    intro: `At ${site.fullName}, we offer a comprehensive range of chemicals designed to optimize the efficiency and quality of processes in both the paper and sugar industries.`,
+      "Specialty chemicals that support paper making and sugar process efficiency.",
+    intro: `At ${site.fullName}, we offer specialty chemicals for paper and sugar industries — from retention and reinforcing agents to mill sanitation, juice clarification, and evaporator antiscalants.`,
     icon: "/images/sugar.png",
     range: {
-      heading: "For Paper Industries:",
+      heading: "For paper industries",
       sideImage: "/images/products/paper-main.jpg",
       items: [
         {
-          title: "Retention Aids",
+          title: "Paper retention agent",
           description:
-            "Enhance fiber and filler retention during paper production, improving paper quality and reducing waste.",
+            "Enhance fiber and filler retention during paper production.",
         },
         {
-          title: "Drainage Aids",
+          title: "Anionic garbage capture agent",
           description:
-            "Accelerate water removal during the paper-making process, increasing machine speed and productivity.",
+            "Help capture anionic trash that interferes with wet-end chemistry.",
         },
         {
-          title: "Paper Dispersant Agents",
+          title: "Paper reinforcing agent",
           description:
-            "Improve the dispersion of fibers and fillers, resulting in better paper formation and smoother production processes.",
+            "Strengthen paper structure and mechanical properties.",
         },
         {
-          title: "Paper Reinforcing Agents",
+          title: "Paper dispersant agent",
           description:
-            "Strengthen the paper structure, enhancing its durability and mechanical properties.",
+            "Improve fiber and filler dispersion for better formation.",
         },
       ],
     },
     secondary: {
-      heading: "For Sugar Industries",
+      heading: "For sugar industries",
       sideImage: "/images/products/sugar-detail.jpg",
       variant: "product-list",
       items: [
         {
-          title: "Mill Sanitation Biocides",
+          title: "Mill sanitation biocide",
           description:
-            "Control microbial growth in mills, ensuring cleaner operations and improved sugar quality.",
+            "Control microbial growth in mills for cleaner operations and better sugar quality.",
         },
         {
-          title: "Color Removal Agents for Juice Clarification",
+          title: "Flocculants / colour removal",
           description:
-            "Remove color impurities during sugar juice clarification, leading to purer final products.",
+            "Support juice clarification and colour removal for purer products.",
         },
         {
-          title: "Evaporator Antiscalants",
+          title: "Evaporator antiscalants",
           description:
-            "Prevent scale buildup in evaporators, improving efficiency and reducing maintenance costs.",
+            "Reduce scale in evaporators to protect heat transfer and uptime.",
         },
         {
-          title: "Viscosity Reducers",
+          title: "Viscosity reducer",
           description:
-            "Reduce the viscosity of sugar syrup, facilitating smoother processing and enhancing production efficiency.",
+            "Help manage process viscosity where sugar streams require it.",
         },
         {
-          title: "Scale Softeners",
+          title: "Scale softeners",
           description:
-            "Loosen and remove existing scale deposits, optimizing heat transfer and equipment performance.",
+            "Assist with softening and removal of process scale deposits.",
         },
       ],
     },

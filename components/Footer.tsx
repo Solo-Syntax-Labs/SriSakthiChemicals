@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BrandLogo from "@/components/BrandLogo";
 import { site } from "@/lib/site";
 
 export default function Footer() {
@@ -11,12 +12,7 @@ export default function Footer() {
             <div className="footer-sec-top">
               <div className="footer-brand">
                 <Link href="/" className="footer-logo">
-                  <Image
-                    src="/images/01-e1726215296786.png"
-                    alt={`${site.name} logo`}
-                    width={72}
-                    height={72}
-                  />
+                  <BrandLogo width={140} height={56} />
                 </Link>
                 <p className="footer-brand-name">{site.legalName}</p>
               </div>
@@ -74,9 +70,11 @@ export default function Footer() {
                           <br />
                         </span>
                       ))}
-                      <a href={`tel:${site.landline.replace(/\s/g, "")}`}>
-                        {site.landline}
-                      </a>
+                      {site.landline ? (
+                        <a href={`tel:${site.landline.replace(/\s/g, "")}`}>
+                          {site.landline}
+                        </a>
+                      ) : null}
                     </span>
                   </li>
                   <li>
@@ -127,7 +125,7 @@ export default function Footer() {
                 </p>
               </div>
               <div className="designed-by">
-                <p>Built for Indigon</p>
+                <p>{site.slogan}</p>
               </div>
             </div>
           </div>

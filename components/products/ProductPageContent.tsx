@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ProductPageData } from "@/lib/products";
+import { site } from "@/lib/site";
 
 type ProductPageContentProps = {
   product: ProductPageData;
@@ -56,7 +57,7 @@ export default function ProductPageContent({ product }: ProductPageContentProps)
 
       <section className="product-section-3">
         <div className="product-section-3-cont">
-          <p className="section-kicker">Why Indigon</p>
+          <p className="section-kicker">Why {site.name}</p>
           <h3>{product.secondary.heading}</h3>
           <ul
             className={

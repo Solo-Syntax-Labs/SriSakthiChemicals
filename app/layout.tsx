@@ -3,6 +3,7 @@ import { Open_Sans, Outfit } from "next/font/google";
 import Script from "next/script";
 import type { CSSProperties } from "react";
 import PageLoader from "@/components/PageLoader";
+import { site } from "@/lib/site";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -17,10 +18,63 @@ const openSans = Open_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const siteDescription =
+  "Manufacturer and exporter of water treatment chemicals and speciality additives for boilers, cooling towers, RO, effluent plants, and process industries.";
+
 export const metadata: Metadata = {
-  title: "Indigon - Tech India Pvt Ltd",
-  description:
-    "Indigon Tech India Private Limited provides industrial water treatment chemicals and plant products across boiler, cooling tower, RO, ETP, and process applications.",
+  metadataBase: new URL(site.website.startsWith("http") ? site.website : `https://${site.website}`),
+  title: {
+    default: site.legalName,
+    template: `%s | ${site.name}`,
+  },
+  description: siteDescription,
+  applicationName: site.name,
+  keywords: [
+    "Sri Sakthi Chemicals",
+    "water treatment chemicals",
+    "boiler treatment",
+    "cooling tower chemicals",
+    "RO chemicals",
+    "effluent treatment",
+    "Madurai",
+  ],
+  authors: [{ name: site.legalName }],
+  creator: site.legalName,
+  publisher: site.legalName,
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+      { url: "/images/brand/favicon-32.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.ico"],
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    siteName: site.name,
+    title: site.legalName,
+    description: siteDescription,
+    images: [
+      {
+        url: "/images/brand/favicon-512.png",
+        width: 512,
+        height: 512,
+        alt: `${site.name} logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: site.legalName,
+    description: siteDescription,
+    images: ["/images/brand/favicon-512.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -44,8 +98,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col antialiased">
-        <Script id="indigon-theme-init" strategy="beforeInteractive">
-          {`(function(){try{var t=localStorage.getItem('indigon-theme-v2');if(t!=='light'&&t!=='dark'){t='dark';localStorage.setItem('indigon-theme-v2',t);}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`}
+        <Script id="ssc-theme-init" strategy="beforeInteractive">
+          {`(function(){try{var t=localStorage.getItem('ssc-theme-v1');if(t!=='light'&&t!=='dark'){t='dark';localStorage.setItem('ssc-theme-v1',t);}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`}
         </Script>
         <PageLoader />
         {children}

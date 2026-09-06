@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { aboutContent } from "@/lib/about";
+import { site } from "@/lib/site";
 
 export default function AboutPageContent() {
   const { intro, sections } = aboutContent;
@@ -13,7 +14,7 @@ export default function AboutPageContent() {
               <div className="about-intro-media">
                 <Image
                   src={intro.image}
-                  alt="About Indigon"
+                  alt={`About ${site.name}`}
                   width={900}
                   height={700}
                   className="about-intro-image"
@@ -55,8 +56,8 @@ export default function AboutPageContent() {
                   <Image
                     src={section.image}
                     alt={section.title}
-                    width={900}
-                    height={700}
+                    fill
+                    sizes="(max-width: 900px) 100vw, 48vw"
                     className="plain-image"
                   />
                 </div>

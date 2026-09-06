@@ -14,85 +14,91 @@ export type AuditBlock = {
 
 export const servicesContent = {
   intro:
-    "Indigon field and lab teams help plants recover efficiency, commission equipment correctly, and keep water programs under control — not just deliver chemicals.",
+    "Sri Sakthi Chemicals field and application teams help plants select the right program, monitor results, and keep water systems under control — not just deliver chemicals.",
   cards: [
     {
-      title: "Boiler & condenser descaling",
+      title: "System audit",
       description:
-        "Targeted descaling for boilers and condensers to restore heat transfer, cut fuel waste, and extend equipment life with controlled, plant-safe methods.",
-      image: "/images/services/boiler-descaling.jpg",
+        "Review utility and process water systems to identify chemistry gaps, fouling risk, and operating issues before recommending a treatment path.",
+      image: "/images/services/audit-cover.jpg",
     },
     {
-      title: "Equipment erection & commissioning",
+      title: "Recommendation & program selection",
       description:
-        "End-to-end erection and commissioning for water-treatment skids and plants, with disciplined installation checks and startup support.",
-      image: "/images/services/commissioning.jpg",
-    },
-    {
-      title: "Industrial water balancing audit",
-      description:
-        "Audit water use across utilities and process loops to find losses, imbalance, and opportunities for lower cost and better recovery.",
-      image: "/images/services/water-audit.jpg",
-    },
-    {
-      title: "Water treatment consultancy",
-      description:
-        "Process and wastewater consultancy covering scheme selection, site supervision, and practical engineering support through installation.",
+        "Match boiler, cooling, RO, effluent, and process chemistry to your water quality, metallurgy, and production constraints.",
       image: "/images/services/consultancy.jpg",
     },
     {
-      title: "Laboratory testing",
+      title: "Troubleshooting",
       description:
-        "Water and process sample testing under controlled lab conditions to guide product selection, dosing, and ongoing monitoring.",
+        "Investigate scale, corrosion, foam, biofilm, or membrane problems and correct dosing or product selection quickly.",
+      image: "/images/services/water-audit.jpg",
+    },
+    {
+      title: "Application & monitoring",
+      description:
+        "Support day-to-day dosing, sampling, and field checks so treatment programs stay on target as plant conditions change.",
       image: "/images/services/lab-testing.jpg",
+    },
+    {
+      title: "Treatment review & operator training",
+      description:
+        "Review program performance with your team and train operators on testing, dosing, and safe handling practices.",
+      image: "/images/services/commissioning.jpg",
+    },
+    {
+      title: "Monthly trend reports & optimisation",
+      description:
+        "Track key parameters over time and refine the program to improve reliability, chemical use, and operating cost.",
+      image: "/images/services/savings.jpg",
     },
   ] satisfies ServiceCard[],
   audit: {
-    title: "Boiler energy audit",
+    title: "How our service cycle works",
     intro:
-      "Our boiler energy audits combine combustion review, heat-transfer checks, and Indigon fireside chemistry to unlock typical fuel savings of 15–25% where systems are out of tune.",
+      "From first survey to ongoing optimisation, SSC application support is built around measurable plant performance and clear operator guidance.",
     blocks: [
       {
-        title: "What the audit covers",
+        title: "Audit survey",
         description:
-          "We examine combustion efficiency, heat-transfer surfaces, excess air, fouling risk, and emissions trends — then convert findings into a clear action list for operations and maintenance teams.",
-        image: "/images/services/audit-cover.jpg",
+          "We examine system design, water quality, dosing points, and recent failures so recommendations are grounded in plant reality — not generic catalogues.",
+        image: "/images/services/boiler-descaling.jpg",
         imagePosition: "left",
       },
       {
-        title: "3T tuning technology",
+        title: "Program selection",
         description:
-          "3T tuning fine-tunes combustion and heat-transfer conditions so the boiler holds a more efficient operating window with lower fuel burn and steadier steam delivery.",
+          "Boiler, fireside, cooling, closed-loop, RO, effluent, sugar, and paper specialty products are selected to match load, metallurgy, and feed-water chemistry.",
         image: "/images/services/tuning.jpg",
         imagePosition: "right",
       },
       {
-        title: "Indigon fireside additives",
+        title: "Application & monitoring",
         description:
-          "Fireside additives help improve combustion cleanliness, reduce fouling/slag tendency, and protect heat-transfer surfaces for longer, more efficient campaigns.",
+          "Field support covers dosing setup, sample interpretation, and corrective action when trends drift — keeping membranes, heat exchangers, and effluent trains stable.",
         image: "/images/services/fireside.jpg",
         imagePosition: "left",
       },
       {
-        title: "Benefits you can measure",
+        title: "Benefits you can track",
         image: "/images/services/savings.jpg",
         imagePosition: "right",
         benefits: [
           {
-            title: "Fuel savings",
-            description: "Typical opportunity range of 15–25% where inefficiency is significant.",
+            title: "Clearer operating picture",
+            description: "Audits and trend reports show what is working and what needs adjustment.",
           },
           {
-            title: "Stronger reliability",
-            description: "Cleaner fireside conditions and more stable boiler performance.",
+            title: "Faster troubleshooting",
+            description: "Application specialists help correct scale, corrosion, foam, and fouling issues.",
           },
           {
-            title: "Lower emissions load",
-            description: "Better combustion control supports cleaner stack performance.",
+            title: "Operator confidence",
+            description: "Training and review sessions keep plant teams aligned on testing and dosing.",
           },
           {
-            title: "Site-specific plan",
-            description: "Recommendations matched to your fuel, load pattern, and metallurgy.",
+            title: "Program optimisation",
+            description: "Ongoing refinement balances protection, cost, and environmental care.",
           },
         ],
       },

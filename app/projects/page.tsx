@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import PageBanner from "@/components/PageBanner";
 import ProjectsPageContent from "@/components/projects/ProjectsPageContent";
 import SiteShell from "@/components/SiteShell";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Projects – ${site.legalName}`,
+  title: "Projects",
   description:
-    "Explore Indigon water treatment plant projects including STP Ozone Bioxy Plasma technology, RO plants, Softening plants, and DM plants.",
+    "Explore Sri Sakthi Chemicals application programs across industries — RO, cooling, closed-loop, effluent, sugar, and paper process chemistry.",
 };
 
 export default function ProjectsPage() {

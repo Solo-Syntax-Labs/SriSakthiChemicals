@@ -6,7 +6,7 @@ type Theme = "light" | "dark";
 
 function getPreferredTheme(): Theme {
   try {
-    const stored = localStorage.getItem("indigon-theme-v2");
+    const stored = localStorage.getItem("ssc-theme-v1");
     if (stored === "light" || stored === "dark") return stored;
   } catch {
     /* ignore */
@@ -30,7 +30,7 @@ export default function ThemeToggle() {
     setTheme(next);
     document.documentElement.setAttribute("data-theme", next);
     try {
-      localStorage.setItem("indigon-theme-v2", next);
+      localStorage.setItem("ssc-theme-v1", next);
     } catch {
       /* ignore */
     }

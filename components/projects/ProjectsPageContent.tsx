@@ -9,8 +9,8 @@ export default function ProjectsPageContent() {
     <div className="projects-page">
       <section className="page-intro-band">
         <div className="container">
-          <p className="section-kicker">Plant engineering</p>
-          <h2>Projects built around your water duty</h2>
+          <p className="section-kicker">Application programs</p>
+          <h2>Programs built around your water duty</h2>
           <p>{intro}</p>
         </div>
       </section>
@@ -37,7 +37,7 @@ export default function ProjectsPageContent() {
         />
         <div className="container projects-panel-wrap">
           <div className={`projects-panel projects-panel-${stpBenefits.align}`}>
-            <p className="section-kicker">STP technology</p>
+            <p className="section-kicker">Industries</p>
             <h3>{stpBenefits.title}</h3>
             <ul>
               {stpBenefits.items.map((item) => (
@@ -65,7 +65,7 @@ export default function ProjectsPageContent() {
           <div
             className={`projects-panel projects-panel-${technicalBackground.align}`}
           >
-            <p className="section-kicker">How it works</p>
+            <p className="section-kicker">Engagement</p>
             <h3>{technicalBackground.title}</h3>
             <ul>
               {technicalBackground.items.map((item) => (
