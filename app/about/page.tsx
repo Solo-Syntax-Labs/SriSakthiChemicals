@@ -5,7 +5,7 @@ import SiteShell from "@/components/SiteShell";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `About – ${site.legalName}`,
+  title: "About",
   description: `Learn about ${site.fullName}, our legacy, products, commitment, and vision in industrial water treatment.`,
 };
 

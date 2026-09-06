@@ -10,7 +10,7 @@ export default function ProductRange() {
           <p className="section-kicker">Specialty chemistry</p>
           <h2>Product lines built for utility and process water</h2>
           <p>
-            Indigon supplies treatment programs for boilers, cooling systems, chillers,
+            {site.name} supplies treatment programs for boilers, cooling systems, chillers,
             RO circuits, effluent trains, foam control, and sugar/paper process needs —
             with guidance matched to your plant conditions.
           </p>

@@ -4,7 +4,6 @@ import PageBanner from "@/components/PageBanner";
 import ProductPageContent from "@/components/products/ProductPageContent";
 import SiteShell from "@/components/SiteShell";
 import { getAllProductSlugs, getProductBySlug } from "@/lib/products";
-import { site } from "@/lib/site";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
@@ -19,10 +18,10 @@ export async function generateMetadata({
 }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
-  if (!product) return { title: `Products – ${site.legalName}` };
+  if (!product) return { title: "Products" };
 
   return {
-    title: `${product.title} – ${site.legalName}`,
+    title: product.title,
     description: product.description,
   };
 }

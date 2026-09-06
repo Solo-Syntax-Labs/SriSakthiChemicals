@@ -2,7 +2,7 @@ import ContactForm from "@/components/contact/ContactForm";
 import { site } from "@/lib/site";
 
 const mapEmbedUrl =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.7140086387876!2d77.79763647505054!3d11.367905788819096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba967fce7ee92d3%3A0xf1ee0b141cc3d8f4!2sAmezoltech%20India%20Private%20Limited!5e1!3m2!1sen!2sin!4v1726491325706!5m2!1sen!2sin";
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15720!2d78.166667!3d9.932778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnNTguMCJOIDc4wrAxMCcwLjAiRQ!5e0!3m2!1sen!2sin!4v1726491325706!5m2!1sen!2sin";
 
 function LocationIcon() {
   return (
@@ -42,11 +42,11 @@ export default function ContactPageContent() {
     <section className="contact-section">
       <div className="container">
         <div className="page-intro-band is-compact">
-          <p className="section-kicker">Talk to Indigon</p>
+          <p className="section-kicker">Talk to {site.name}</p>
           <h2>Tell us about your water challenge</h2>
           <p>
             Share your plant requirement and our team will help with chemistry,
-            testing, or project support.
+            testing, or application support.
           </p>
         </div>
 
@@ -90,9 +90,6 @@ export default function ContactPageContent() {
                       <br />
                     </span>
                   ))}
-                  <a href={`tel:${site.landline.replace(/\s/g, "")}`}>
-                    {site.landline.replace(/\s/g, "")}
-                  </a>
                 </div>
               </div>
             </div>

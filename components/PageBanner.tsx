@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { site } from "@/lib/site";
 
 type PageBannerProps = {
   title: string;
@@ -25,7 +26,7 @@ export default function PageBanner({ title, crumbs }: PageBannerProps) {
       <div className="inner-banner-overlay" />
       <div className="inner-banner-glow" aria-hidden />
       <div className="inner-banner-section">
-        <p className="inner-banner-kicker">Indigon</p>
+        <p className="inner-banner-kicker">{site.name}</p>
         <h3>{title}</h3>
         <ul className="breadcrumb">
           {items.map((item) => (

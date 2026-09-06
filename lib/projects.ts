@@ -13,107 +13,107 @@ export type PlantSection = {
 };
 
 export const projectsContent = {
-  intro:
-    `${site.name} fabricates and installs treatment plants sized to your process — from RO and softening to DM, STP, and integrated utility water schemes.`,
+  intro: `${site.name} supplies water treatment and specialty chemistry for the systems plants already run — boilers, cooling towers, RO trains, ETPs, STPs, and process lines across multiple industries.`,
   introSections: [
     {
-      title: "Water treatment plants",
-      description: `We design and install RO, softening, DM, and related plants across capacities, configured for your source water and process demand — not a one-size package.`,
+      title: "Programs for industrial water systems",
+      description: `We support RO, cooling, boiler, effluent, and utility water programs configured around your source water and process demand — chemistry and application guidance, not a one-size package.`,
     },
     {
-      title: "Advanced STP: Ozone Bioxy Plasma",
-      description: `For sewage treatment, Indigon offers Ozone Bioxy Plasma technology — combining ozone and bio-oxygen for compact, low-sludge wastewater treatment with a smaller operating footprint.`,
+      title: "Solutions across industries",
+      description: `From paper & pulp and textiles to sugar & distilleries, cement, chemical process, hospitals, hotels, dairy, petroleum, and desalination — SSC application teams help match products to each process duty.`,
     },
   ],
   stpBenefits: {
-    title: "Why plants choose this STP approach",
+    title: "Industries we regularly support",
     background: "/images/projects/stp-benefits.jpg",
     align: "left" as const,
     items: [
       {
-        title: "No sludge burden",
-        description: "Avoids conventional sludge handling loads that slow operations.",
+        title: "Paper & pulp",
+        description: "Retention, reinforcing, dispersant agents, and process foam control.",
       },
       {
-        title: "No biological train required",
-        description: "Removes dependence on traditional biological process blocks.",
+        title: "Textiles & effluent",
+        description: "Coagulants, polymers, and colour-removal programs for tough coloured streams.",
       },
       {
-        title: "Compact footprint",
-        description: "Needs less civil space than many conventional STP layouts.",
+        title: "Sugar & distilleries",
+        description: "Mill sanitation, juice clarification, evaporator antiscalants, and viscosity aids.",
       },
       {
-        title: "Chemical-light operation",
-        description: "Designed for cleaner operation with minimal chemical dependence.",
+        title: "Utilities & power",
+        description: "Boiler, fireside, cooling, and closed-loop chemistry for heat-transfer assets.",
       },
       {
-        title: "Lower manpower load",
-        description: "Simpler operating philosophy reduces day-to-day staffing pressure.",
+        title: "RO & desalination",
+        description: "Membrane antiscalants, cleaners, biocides, and permeate-line protection.",
       },
       {
-        title: "Stronger sustainability profile",
-        description: "Breaks down pollutants toward cleaner gas pathways and reuse potential.",
+        title: "Process industries",
+        description: "Chemical process, resins & paints, dairy, fertilizer, petroleum, and general manufacturing.",
       },
     ] satisfies BenefitItem[],
   },
   technicalBackground: {
-    title: "Technical background in brief",
+    title: "How we engage on site",
     background: "/images/projects/stp-technical.jpg",
     align: "right" as const,
     items: [
       {
         description:
-          "Treatment relies on a controlled combination of ozone and bio-oxygen plasma at the right stoichiometric ratio.",
-      },
-      {
-        description: "The technology platform is patented.",
+          "System audit and survey to understand water quality, metallurgy, and operating constraints.",
       },
       {
         description:
-          "Bio-oxygen is an intermediate, more reactive stage that helps break down high BOD/COD loads and solubilize biological mass during recirculation.",
+          "Program selection across boiler, cooling, RO, effluent, sugar, and paper specialty lines.",
       },
       {
         description:
-          "Outlet ozone/bio-oxygen balance helps confirm decomposition performance in operation.",
+          "Application monitoring with sampling guidance and corrective action when trends drift.",
       },
       {
         description:
-          "Simple ozonation alone is better suited to polishing low-toxicity, low-TSS treated sewage — this combined approach targets tougher raw sewage loads.",
+          "Operator training and treatment review so plant teams can sustain the program day to day.",
+      },
+      {
+        description:
+          "Monthly trend reporting and optimisation to balance protection, cost, and environmental care.",
       },
     ] satisfies BenefitItem[],
   },
   plants: [
     {
-      title: "Reverse Osmosis (RO) plants",
+      title: "Reverse Osmosis programs",
       image: "/images/projects/ro-plant.png",
       imagePosition: "right",
       items: [
-        "Removes dissolved salts and contaminants for process-ready water.",
-        "Sized for industrial duty across borewell, municipal, and mixed sources.",
-        "Configurable recovery and pretreatment to protect membranes.",
-        "Built for stable purified water quality under varying feed conditions.",
+        "Antiscalants and cleaners to protect membrane performance.",
+        "Biocides for online dosing and offline sanitisation.",
+        "Membrane-compatible flocculants for feed optimisation.",
+        "Specialty chemistry for chlorine reduction and permeate-line corrosion protection.",
       ],
     },
     {
-      title: "Softening plants",
+      title: "Cooling & closed-loop programs",
       image: "/images/projects/softening.jpg",
       imagePosition: "left",
       items: [
-        "Removes hardness ions that drive scale in boilers and cooling loops.",
-        "Protects heat-transfer surfaces and reduces cleaning frequency.",
-        "Suited to utilities that need dependable soft water supply.",
-        "Designed for straightforward operation and maintenance access.",
+        "Corrosion inhibitors for carbon steel and multimetal systems.",
+        "Antiscalants, antifoulants, and dispersants for heat-transfer surfaces.",
+        "Non-oxidising biocides and chlorine dioxide options for microbial control.",
+        "Closed-system nitrite / molybdate / phosphonate programs for chillers and sealed loops.",
       ],
     },
     {
-      title: "Deionization (DM) plants",
+      title: "Effluent & process programs",
       image: "/images/projects/dm-plant.jpg",
       imagePosition: "right",
       items: [
-        "Delivers low-conductivity water for high-purity industrial uses.",
-        "Common in power, process, and quality-critical manufacturing.",
-        "Available in automatic and semi-automatic configurations.",
-        "Stable output when paired with the right pretreatment train.",
+        "Polymers and coagulants for solids separation in ETPs.",
+        "Colour-removal aids for textile and other coloured effluents.",
+        "Sugar process biocides, flocculants, and evaporator antiscalants.",
+        "Paper wet-end agents and defoamers for process foam control.",
       ],
     },
   ] satisfies PlantSection[],

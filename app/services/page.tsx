@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import PageBanner from "@/components/PageBanner";
 import ServicesPageContent from "@/components/services/ServicesPageContent";
 import SiteShell from "@/components/SiteShell";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Services – ${site.legalName}`,
+  title: "Services",
   description:
-    "Indigon services include boiler descaling, equipment erection & commissioning, water audits, consultancy, lab testing, and boiler energy audits.",
+    "Sri Sakthi Chemicals services include system audits, program selection, troubleshooting, application monitoring, operator training, and program optimisation.",
 };
 
 export default function ServicesPage() {

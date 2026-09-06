@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import BrandLogo from "@/components/BrandLogo";
 import ThemeToggle from "@/components/ThemeToggle";
 import { site } from "@/lib/site";
 
@@ -54,13 +55,7 @@ export default function Header() {
             <div className="header-sec-left">
               <div className="logo">
                 <Link href="/">
-                  <Image
-                    src="/images/01-e1726215296786.png"
-                    alt={`${site.name} logo`}
-                    width={80}
-                    height={80}
-                    priority
-                  />
+                  <BrandLogo width={160} height={64} priority />
                 </Link>
                 <h4>{site.legalName}</h4>
               </div>

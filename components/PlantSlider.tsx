@@ -18,11 +18,11 @@ export default function PlantSlider() {
     <section className="plant-section home-plant" aria-label="Plant products">
       <div className="container plant-shell">
         <div className="plant-intro">
-          <p className="section-kicker">Plant products</p>
-          <h2>Treatment systems built for real industrial loads</h2>
+          <p className="section-kicker">Application programs</p>
+          <h2>Chemistry built for real industrial loads</h2>
           <p>
-            From effluent and sewage treatment to RO and demineralization, Indigon
-            designs and supports plants that keep process water reliable.
+            From effluent and sewage treatment to RO and utility water loops, {site.name}
+            supplies programs that keep process water reliable.
           </p>
           <div className="plant-tabs" role="tablist" aria-label="Plant types">
             {slides.map((item, i) => (

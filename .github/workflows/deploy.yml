@@ -39,7 +39,7 @@ jobs:
         run: pnpm build
         env:
           GITHUB_PAGES: "true"
-          NEXT_PUBLIC_BASE_PATH: /indigon
+          NEXT_PUBLIC_BASE_PATH: /SriSakthiChemicals
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

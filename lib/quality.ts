@@ -10,31 +10,31 @@ export type QualityBlock = {
 
 export const qualityContent = {
   title: "Quality that holds up in real plant conditions",
-  intro: `At ${site.name}, quality means consistent chemistry, clear testing, and products that perform after they leave our facility — not just paperwork on a shelf.`,
+  intro: `At ${site.name}, quality means consistent chemistry, clear testing, and products that perform after they leave our facility — backed by lab capability and disciplined production practice.`,
   blocks: [
     {
-      title: "Process control from raw material to dispatch",
+      title: "Process control from lab to dispatch",
+      imagePosition: "right",
+      image: "/images/brand/brochure-lab.png",
+      paragraphs: [
+        "Our quality approach covers raw-material checks, in-process controls, and finished-batch testing for composition, performance, and application safety before release.",
+      ],
+    },
+    {
+      title: "Laboratory & R&D capability",
+      imagePosition: "left",
+      image: "/images/quality/rnd.jpg",
+      paragraphs: [
+        `${site.shortName} maintains a state-of-the-art laboratory and R&D centre so formulations can be refined against real plant feedback and water conditions.`,
+        "Well-trained, process-specific personnel support both production consistency and application troubleshooting.",
+      ],
+    },
+    {
+      title: "Production capacity with QA discipline",
       imagePosition: "right",
       image: "/images/quality/process-control.jpg",
       paragraphs: [
-        "Our quality system covers raw-material checks, in-process controls, and finished-batch testing for composition, performance, and application safety before release.",
-      ],
-    },
-    {
-      title: "Standards we work to",
-      imagePosition: "left",
-      image: "/images/quality/standards.jpg",
-      paragraphs: [
-        `${site.name} maintains ISO 9001:2015 practices so product and service delivery stay consistent with customer and regulatory expectations.`,
-        "Where relevant, formulations and methods also align with recognized industrial and environmental guidance used by our customer segments.",
-      ],
-    },
-    {
-      title: "In-house R&D for better programs",
-      imagePosition: "right",
-      image: "/images/quality/rnd.jpg",
-      paragraphs: [
-        "Our lab team refines inhibitors, biocides, and process aids using plant feedback — improving stability, handling, and treatment results under Indian operating conditions.",
+        "With production capacity of over 15 MT per day, established quality assurance practices help batches stay consistent as volumes scale.",
       ],
     },
     {
@@ -42,33 +42,33 @@ export const qualityContent = {
       imagePosition: "left",
       image: "/images/quality/wet-lab.jpg",
       paragraphs: [
-        "Customer water samples are evaluated so recommendations match actual hardness, contamination, and process constraints — then performance can be reviewed again after dosing starts.",
+        "Customer water samples and system data guide product selection and dosing — then performance can be reviewed again after programs start.",
       ],
     },
     {
-      title: "Ongoing checks after release",
+      title: "Health, safety & ongoing checks",
       imagePosition: "right",
       image: "/images/quality/monitoring.jpg",
       paragraphs: [
-        "Quality does not stop at dispatch. We keep watching batch consistency and field feedback so programs stay effective over time.",
+        "Health and safety procedures are implemented on the floor, and quality does not stop at dispatch — we watch batch consistency and field feedback over time.",
       ],
       items: [
         {
           title: "Batch testing",
-          description: "Each lot is verified before it is released to customers.",
+          description: "Lots are verified before release to customers.",
         },
         {
-          title: "Stability tracking",
-          description: "Shelf performance is monitored so chemistry stays dependable in storage.",
+          title: "Application monitoring",
+          description: "Field trends help confirm the program is holding in operation.",
         },
         {
           title: "Customer feedback loops",
-          description: "Site results help us tighten formulations and application guidance.",
+          description: "Site results help us tighten formulations and guidance.",
         },
       ],
     },
     {
-      title: "Sustainability as a quality metric",
+      title: "Responsible chemistry for plant and environment",
       imagePosition: "left",
       image: "/images/quality/sustainability.jpg",
       paragraphs: [
@@ -77,5 +77,5 @@ export const qualityContent = {
     },
   ] satisfies QualityBlock[],
   monitoringClosing:
-    "Advanced lab methods and disciplined release checks keep Indigon products consistent from batch to batch.",
+    "Lab methods, production discipline, and application review keep Sri Sakthi Chemicals products consistent from batch to batch.",
 };

@@ -5,11 +5,15 @@ type ImageLoaderProps = {
 };
 
 /** Prefixes static image paths with the GitHub Pages base path. */
-export default function imageLoader({ src }: ImageLoaderProps): string {
+export default function imageLoader({
+  src,
+  width,
+  quality = 75,
+}: ImageLoaderProps): string {
   if (src.startsWith("http://") || src.startsWith("https://") || src.startsWith("//")) {
     return src;
   }
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-  return `${basePath}${src}`;
+  return `${basePath}${src}?w=${width}&q=${quality}`;
 }

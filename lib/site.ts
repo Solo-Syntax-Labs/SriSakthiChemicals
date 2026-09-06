@@ -10,18 +10,22 @@ export type NavItem = {
 };
 
 export const site = {
-  name: "Indigon",
-  legalName: "Indigon - Tech India Pvt Ltd",
-  fullName: "Indigon Tech India Private Limited",
-  phones: ["+91 88833 38262", "+91 98427 51296"],
-  landline: "04288 - 242047",
-  emails: ["info@indigon.com", "contact@indigon.com"],
+  name: "Sri Sakthi Chemicals",
+  legalName: "Sri Sakthi Chemicals (P) Ltd",
+  fullName: "Sri Sakthi Chemicals (P) Ltd",
+  shortName: "SSC",
+  website: "https://www.srisakthichemicals.com",
+  sisterConcern: "RSG Exports & Imports",
+  slogan: "Globe in Palm to Grow",
+  people: ["Mr. V. Bala Krishnan", "Mr. B. Kapilan"],
+  phones: ["+91 98652 51577", "+91 94433 75330", "+91 96268 13034"],
+  emails: ["srisakthichemdu@gmail.com", "balassm.1972@gmail.com"],
   address: [
-    "4/181-E2, Mahalakshmi Nagar,",
-    "Kadachanallur, Pallipalayam,",
-    "Erode -638008.",
+    "Plot No: 38, New Kurinji Residency,",
+    "Pandi Kovil Ring Road, Karuppayurani (PO),",
+    "East Anna Nagar, Madurai - 625020.",
   ],
-  whatsapp: "918883338262",
+  whatsapp: "919865251577",
   productLinks: [
     { label: "Boiler Treatment Chemicals", href: "/products/boiler-treatment-chemicals" },
     { label: "Cooling Tower Treatment Chemicals", href: "/products/cooling-tower-treatment-chemicals" },
@@ -63,7 +67,7 @@ export const site = {
   heroSlides: [
     {
       image: "/images/hero-1.gif",
-      eyebrow: "Indigon Tech India",
+      eyebrow: "Sri Sakthi Chemicals",
       title: "Turning Complex Chemistry into",
       highlight: "EVERYDAY CONVENIENCE.",
     },
@@ -75,32 +79,34 @@ export const site = {
     },
     {
       image: "/images/hero-3.gif",
-      eyebrow: "Plant Products",
+      eyebrow: "Specialty Programs",
       title: "Advanced Treatment Built for",
       highlight: "INDUSTRIAL PERFORMANCE.",
     },
   ],
   plantSlides: [
     {
-      title: "ETP Plant",
+      title: "ETP Programs",
       description:
-        "An effluent treatment (ETP) is a facility designed to treat industrial waste water by removing contaminants, ensuring that the discharge meets environmental regulations before being released or reused.",
+        "Effluent treatment chemicals and programs that help industrial wastewater plants remove contaminants and move toward cleaner discharge and reuse.",
       image: "/images/home/plant-etp.jpg",
     },
     {
-      title: "STP Plant",
+      title: "STP Programs",
       description:
-        "At Indigon, we introduce Ozone Bioxy Plasma Technology, a revolutionary advancement in Sewage Treatment Plants (STPs).",
+        "Specialty chemistry and application support for sewage treatment systems serving hospitals, hotels, and industrial campuses.",
       image: "/images/home/plant-stp.jpg",
     },
     {
-      title: "RO Plant",
-      description: "Advanced reverse osmosis systems engineered for high-purity industrial water treatment.",
+      title: "RO Programs",
+      description:
+        "Membrane antiscalants, cleaners, biocides, and monitoring support for high-purity reverse osmosis trains.",
       image: "/images/home/plant-ro.jpg",
     },
     {
-      title: "DM Plant",
-      description: "Eliminates ionic impurities from water for high-purity applications.",
+      title: "Utility Water",
+      description:
+        "Boiler, cooling, and closed-loop treatment programs that protect heat-transfer equipment and keep utilities reliable.",
       image: "/images/home/plant-dm.jpg",
     },
   ],

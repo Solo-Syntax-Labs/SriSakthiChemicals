@@ -1,32 +1,32 @@
 @import "tailwindcss";
 
-/* Indigon theme — dark by default; lagoon teal + warm amber */
+/* Sri Sakthi Chemicals theme — dark by default; navy + cyan */
 :root,
 [data-theme="dark"] {
-  --background: #0b1416;
-  --foreground: #e8f2f1;
-  --surface: #121e21;
-  --surface-elevated: #17262a;
-  --border: #2a3f43;
-  --header-bg: rgba(11, 20, 22, 0.92);
-  --brand-blue: #2dd4bf;
-  --brand-navy: #99f6e4;
-  --brand-orange: #fbbf24;
-  --brand-muted: #9bb0ad;
-  --brand-soft: #132426;
+  --background: #0a0e1a;
+  --foreground: #e8eef8;
+  --surface: #12182a;
+  --surface-elevated: #182038;
+  --border: #2a3558;
+  --header-bg: rgba(10, 14, 26, 0.92);
+  --brand-blue: #2cb4e8;
+  --brand-navy: #8eb4ff;
+  --brand-orange: #00aeef;
+  --brand-muted: #9aa8c4;
+  --brand-soft: #141c32;
   --brand-icon: transparent;
-  --hero-panel: #123033;
-  --hero-panel-deep: #0f2629;
+  --hero-panel: #162040;
+  --hero-panel-deep: #101830;
   --plant-overlay: linear-gradient(
     to right,
-    rgba(8, 24, 28, 0.96) 0%,
-    rgba(8, 24, 28, 0.55) 100%
+    rgba(10, 16, 36, 0.96) 0%,
+    rgba(10, 16, 36, 0.55) 100%
   );
-  --footer-tint: rgba(6, 14, 16, 0.92);
-  --footer-bg: linear-gradient(155deg, #0d3333 0%, #0a2224 48%, #071416 100%);
-  --footer-text: #e8f2f1;
-  --footer-muted: rgba(232, 242, 241, 0.68);
-  --footer-line: rgba(232, 242, 241, 0.14);
+  --footer-tint: rgba(8, 12, 24, 0.92);
+  --footer-bg: linear-gradient(155deg, #1a2450 0%, #121a38 48%, #0a0e1a 100%);
+  --footer-text: #e8eef8;
+  --footer-muted: rgba(232, 238, 248, 0.68);
+  --footer-line: rgba(232, 238, 248, 0.14);
   --shadow-soft: 0 14px 36px rgba(0, 0, 0, 0.35);
   --font-display: var(--font-outfit), system-ui, sans-serif;
   --font-body: var(--font-open-sans), system-ui, sans-serif;
@@ -34,31 +34,31 @@
 }
 
 [data-theme="light"] {
-  --background: #f5fbfa;
-  --foreground: #14242b;
+  --background: #f4f7fc;
+  --foreground: #152038;
   --surface: #ffffff;
   --surface-elevated: #ffffff;
-  --border: #d3e5e2;
+  --border: #d5deef;
   --header-bg: rgba(255, 255, 255, 0.92);
-  --brand-blue: #0f766e;
-  --brand-navy: #115e59;
-  --brand-orange: #d97706;
-  --brand-muted: #5b6b72;
-  --brand-soft: #e6f4f3;
-  --brand-icon: #b7d9d5;
-  --hero-panel: #dff3f0;
-  --hero-panel-deep: #c8e8e3;
+  --brand-blue: #283378;
+  --brand-navy: #1e2a6b;
+  --brand-orange: #00aeef;
+  --brand-muted: #5b6b88;
+  --brand-soft: #e8eef8;
+  --brand-icon: #b8c6e0;
+  --hero-panel: #e4ecf8;
+  --hero-panel-deep: #d0dcf0;
   --plant-overlay: linear-gradient(
     to right,
-    rgba(15, 61, 58, 0.96) 0%,
-    rgba(11, 30, 34, 0.55) 100%
+    rgba(40, 51, 120, 0.96) 0%,
+    rgba(20, 28, 64, 0.55) 100%
   );
-  --footer-tint: rgba(11, 40, 42, 0.88);
-  --footer-bg: linear-gradient(155deg, #0f766e 0%, #115e59 42%, #0b3f3c 100%);
-  --footer-text: #f0fdfa;
-  --footer-muted: rgba(240, 253, 250, 0.72);
-  --footer-line: rgba(240, 253, 250, 0.18);
-  --shadow-soft: 0 14px 36px rgba(15, 118, 110, 0.1);
+  --footer-tint: rgba(30, 42, 100, 0.88);
+  --footer-bg: linear-gradient(155deg, #283378 0%, #1e2a6b 42%, #141c40 100%);
+  --footer-text: #f0f6ff;
+  --footer-muted: rgba(240, 246, 255, 0.72);
+  --footer-line: rgba(240, 246, 255, 0.18);
+  --shadow-soft: 0 14px 36px rgba(40, 51, 120, 0.12);
   color-scheme: light;
 }
 
@@ -244,9 +244,39 @@ p {
 }
 
 .header-sec-left .logo img {
-  width: 72px;
+  width: 148px;
   height: auto;
   flex-shrink: 0;
+}
+
+.brand-logo-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  object-fit: contain;
+  background: transparent !important;
+  border-radius: 0;
+  padding: 0;
+}
+
+.brand-logo-on-dark {
+  display: block;
+}
+
+.brand-logo-on-light {
+  display: none;
+}
+
+[data-theme="light"] .brand-logo-on-dark {
+  display: none;
+}
+
+[data-theme="light"] .brand-logo-on-light {
+  display: block;
 }
 
 .logo h4 {
@@ -1266,6 +1296,11 @@ p {
   gap: 14px;
 }
 
+.footer-brand .brand-logo {
+  width: 132px;
+  height: auto;
+}
+
 .footer-brand-name {
   font-family: var(--font-display);
   font-size: 18px;
@@ -1519,7 +1554,7 @@ p {
   }
 
   .header-sec-left .logo img {
-    width: 56px;
+    width: 120px;
   }
 
   .hero-slider {
@@ -2010,7 +2045,10 @@ ul.breadcrumb li span {
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid var(--border);
-  min-height: 300px;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  min-height: 0;
+  background: var(--surface);
 }
 
 .about-media img,
@@ -2018,8 +2056,9 @@ ul.breadcrumb li span {
 .slant-image {
   width: 100%;
   height: 100%;
-  min-height: 300px;
+  min-height: 0;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -3398,7 +3437,7 @@ ul.breadcrumb li span {
   }
 
   .header-sec-left .logo img {
-    width: 48px;
+    width: 104px;
   }
 
 
@@ -3637,7 +3676,11 @@ ul.breadcrumb li span {
   .about-media img,
   .plain-image,
   .slant-image {
-    min-height: 200px;
+    min-height: 0;
+  }
+
+  .about-media {
+    aspect-ratio: 4 / 3;
   }
 
   .products-index {

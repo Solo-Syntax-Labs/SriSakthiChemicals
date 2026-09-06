@@ -37,7 +37,7 @@ export default function ClientsSection() {
       <div className="container">
         <div className="home-clients-head">
           <p className="section-kicker">Customer network</p>
-          <h2>Plants that trust Indigon day after day</h2>
+          <h2>Plants that trust {site.name} day after day</h2>
           <p>
             From textile and sugar mills to power and process utilities, our chemistry
             and service teams support operations that cannot afford unstable water

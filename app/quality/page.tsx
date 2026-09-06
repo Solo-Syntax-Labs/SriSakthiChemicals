@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import PageBanner from "@/components/PageBanner";
 import QualityPageContent from "@/components/quality/QualityPageContent";
 import SiteShell from "@/components/SiteShell";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Quality – ${site.legalName}`,
+  title: "Quality",
   description:
-    "Learn about Indigon quality assurance, ISO standards, in-house R&D, wet lab analysis, continuous monitoring, and sustainability commitment.",
+    "Learn about Sri Sakthi Chemicals quality assurance, laboratory and R&D capability, wet lab support, continuous monitoring, and responsible chemistry.",
 };
 
 export default function QualityPage() {
